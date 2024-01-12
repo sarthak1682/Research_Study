@@ -2,5 +2,4 @@
 {"dg-publish":true,"permalink":"/course-plan/","noteIcon":""}
 ---
 
-
-![CAE5D7F5-548F-40BA-B1A5-23EC7293E05E.jpeg](/img/user/Attachments/CAE5D7F5-548F-40BA-B1A5-23EC7293E05E.jpeg)
+![Screenshot 2024-01-12 at 21.51.37.png](/img/user/Attachments/Screenshot%202024-01-12%20at%2021.51.37.png)
