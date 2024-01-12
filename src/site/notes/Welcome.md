@@ -3,5 +3,5 @@
 ---
 
 
-I like to study in the open. 
+Welcome to my Knowledge Garden, I like to study in the open. Notes from my MSc Computer Science will be uploaded here. 
 
