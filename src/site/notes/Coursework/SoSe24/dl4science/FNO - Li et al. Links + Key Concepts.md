@@ -43,3 +43,11 @@ They experiment with Burgers’ equation, Darcy flow, and Navier-Stokes equation
 [[Fast Fourier Transform (FFT)\|Fast Fourier Transform (FFT)]]
 [[MCMC\|MCMC]]
 [[ResNet\|ResNet]]
+
+Q Slide 15: Why would we not want dependency on initial condition? 
+Q Slide 19: "Cutting off the top Nodes" : But do they not say they can recover it?  "The activation functions help to recover the Higher frequency modes and non-periodic boundary which are left out in the Fourier layers."
+
+
+### Questions
+
+Do you need all of this if Fourier Transform is doing all the heavy lifting? 
