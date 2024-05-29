@@ -7,7 +7,7 @@ Link: [Can Machines Learn How Clouds Work? The Epistemic Implications of Machine
 
 ---
 Conclusion
-Although I do agree with the main thrust of the this strand of thought, which is basically end-to-end empirical training is bound to fail, but I don't do so for her reasons, if she gives any. She repeatedly asserts "widespread failure in neural network generalisability to the lack of process representation" but fails to give reasons. This kind of claims are susceptible to math and do stand to illuminate phil of sci, but not from this paper. 
+Although I do agree with the main thrust of the this strand of thought, which is basically end-to-end empirical training is unlikely to success, but I don't do so for her reasons, if she gives any. She repeatedly asserts "widespread failure in neural network generalisability to the lack of process representation" but fails to give reasons/evidence. This kind of claims are susceptible to math and do stand to illuminate phil of sci, but not from this paper. 
 
 
 
@@ -36,7 +36,7 @@ Questions:
 
 
 Concepts:
-[[Closure Assumption\|Closure Assumption]]
+[[Coursework/SoSe24/Phil_ML/Closure Assumption\|Closure Assumption]]
 
 
 Other Papers showing diffcullty:
@@ -45,3 +45,8 @@ Other Papers showing diffcullty:
 
 Better Approaches? 
 [[2301.10343] ClimaX: A foundation model for weather and climate](https://arxiv.org/abs/2301.10343)
+
+
+Discussion: 
+
+Overfitting can be avoided with proper sampling
