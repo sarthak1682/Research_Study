@@ -11,10 +11,10 @@
 ![Screenshot 2024-06-03 at 15.10.13.png](/img/user/Attachments/Screenshot%202024-06-03%20at%2015.10.13.png)
 
 Step 1: Get the average of its neighbours
-Step 2: Pass the Avg vector through a dense NN Layer (Matrix Mul + NonLinear Activation)
+Step 2: Pass the Avg vector through a dense NN Layer (Matrix Mul + NonLinear Activation)️
 
 
-2 layer GCN: it's same as any other NN except for the preprocessing step at the beginning of each layer. 
+2 layer GCN: it's same as any other NN except for the ️preprocessing step at the beginning of each layer. 
 ![Screenshot 2024-06-03 at 15.13.08.png](/img/user/Attachments/Screenshot%202024-06-03%20at%2015.13.08.png)
 
 
