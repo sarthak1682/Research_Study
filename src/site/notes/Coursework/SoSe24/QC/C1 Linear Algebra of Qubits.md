@@ -152,3 +152,96 @@ the positive amplitude states are EPR Pairs
 
 ## Measuring Qubits
 
+If one measures a qubit and the result turns out to be 0 qubit, then the only thing that can be said with certainty is $\alpha$ =! 0 must have been true. 
+
+
+### Measurement in Bases other than the Computational Basis
+
+Choosing X-Axis as the computational Basis
+$$ \ket{+} = \frac{1}{\sqrt{2}} (|0\rangle + |1\rangle);
+\ket{-} = \frac{1}{\sqrt{2}} (|0\rangle - |1\rangle)
+$$
+
+
+Choosing Y-Axis as the computational Basis
+$$ 
+
+ \ket{i} = \frac{1}{\sqrt{2}} (|0\rangle + i|1\rangle);
+\ket{-i} = \frac{1}{\sqrt{2}} (|0\rangle - i|1\rangle)
+$$
+
+
+
+Each bases are normalized eigenvectors of the corresponding Pauli Matrices with eigenvalue +1 and -1.
+
+
+Conversion 
+
+$$ 
+\alpha\ket{0} + \beta\ket{1}
+= \hat{\alpha}\ket{+} + \hat{\beta}\ket{-} 
+= \tilde{\alpha}\ket{i}+  \tilde{\beta}\ket{-i}
+
+$$
+
+where, 
+$$ 
+\hat{\alpha} = \frac{1}{sqrt(2)}(\alpha + \beta)
+$$$$
+\hat{\beta} = \frac{1}{sqrt(2)}(\alpha - \beta)
+
+$$
+and where, 
+$$
+\tilde{\alpha}
+=  \frac{1}{sqrt(2)}(\alpha - i\beta)
+
+
+
+$$
+$$
+\tilde{\beta} =  \frac{1}{sqrt(2)}(\alpha + i\beta)
+$$
+
+
+
+### Observables
+
+Physical Entities are repr. by linear operators in the hilbert space
+
+[[Coursework/SoSe24/QC/Hilbert Space\|Hilbert Space]]
+
+Observable: any physical quantity that one can measure out of a particle (position, momentum etc.)
+
+linear operator: map on a vector space that preserves structure (on that space)
+Addition is still addition, scalar mult is still the same
+![Screenshot 2024-06-06 at 14.38.55.png](/img/user/Attachments/Screenshot%202024-06-06%20at%2014.38.55.png)
+
+Linear Op. = Abstract Map, Matrix is the repr. of that in a particular basis
+
+
+given an observable, how can one get all the possible values that one can measure?  find the eigenvalues
+to find out which particular eigenstate corresponds to that particular value, find the eigenvector
+eignv. = def. states, eignval. = def. values
+[[Coursework/SoSe24/QC/Hermitian Operators\|Hermitian Operators]]
+
+
+## Density Matrix
+Can be used to repr. mixed state, prob. distr. over pure quantum state
+
+$$ 
+\rho = \sum\limits_{i}p_{i}\ket{\psi_i}\bra{\psi_i}
+
+$$
+40% of 0 and 60 of 1 would look like
+$$ \rho = \frac{2}{5}\ket{0}\bra{0}
++  \frac{3}{5}\ket{1}\bra{1}
+= \begin{pmatrix}   \frac{2}{5} & 0\\ 0 & \frac{3}{5}  \\  \end{pmatrix}
+$$
+
+### Exp. Value
+
+
+$$ E = tr(O\rho)$$
+## No Cloning Theorem 
+
