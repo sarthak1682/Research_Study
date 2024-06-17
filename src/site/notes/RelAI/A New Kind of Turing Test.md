@@ -3,6 +3,20 @@
 ---
 
 ---
+The main insight is very simple yet universal. 
+P1: "Descriptions (Is Propositions) and Prescriptions (Ought Propositions) are the only kind of propositions"
+therefore:
+"Any System that reliably creates and understands descriptive and prescriptive propositions should be called generally intelligent."
+
+So, I smuggled in 3 extra categories that should be further specified
+1) reliable (some kind of a measure)
+2) create (well, easy!)
+3) understand (synonym for "already represent")
+
+So let's clarify what P1 is in an ELI5 way, while noting that it can't be proved but only be observed. 
+
+----
+
 Q - What is an "Is"?
 "Is" Statements are Statements of factual Nature. 
 e.g 
@@ -33,6 +47,25 @@ Note_2 : Obviously it makes, in total,  4 Categories. Namely :
 3) ought
 4) ought not
 But putting 1), 2) and 3), 4) seems just logical from the Definition above. 
+
+----
+What is already known about Is and Ought? 
+1) They are of distinct nature 
+2) One can't derive an ought from a set of Is Statements.  (Hume's Guillotine)
+
+What is yet undiscovered? 
+The fact these are the *only* two kinds of proposition, which gives a *sufficient* condition
+
+What are the implications? 
+1) Instead of the original turing test, which relies on fooling the interlocutor, this test is of real scientific and ethical significance, covers everything from "iPad *is* Black" to "Gravity *is* the curvature of spacetime" and more, from "One ought to love one's neighbour" to golden rule and more. 
+2) Perhaps CogSci can take this as their highest goal, how do we move into descriptive and prescriptive space given a pre-programmed set of descriptions and prescriptions, I am aware that this is kind of an innatist persepctive. 
+
+
+Note: I have very little knowledge 
+
+
+### Extra stuff if you wanna get more context
+
 ---
 Q - What is Hume's Guillotine?
 "One can not derive an 'Ought' Statement from an 'Is' Statement."
@@ -81,8 +114,7 @@ I would propose that instead of checking the Effects of singular "Is Statement" 
 Q - Is that it?
 For now, Yes! I have to think more about this, even try to disprove it like an honest Person but till then I have figured out why I should walk the Road of Truth and Justice. Adios!
 
-### Related Questions
-Q - Is Deduction an Operation over Statements? (Yeah, I think so.)
+
 
 
 ### References : 
