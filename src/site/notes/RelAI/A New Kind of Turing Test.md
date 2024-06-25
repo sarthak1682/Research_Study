@@ -4,7 +4,7 @@
 
 ---
 The main insight is very simple yet universal. 
-P1: "Descriptions (Is Propositions) and Prescriptions (Ought Propositions) are the only kind of propositions"
+P1: "Descriptions (Is Propositions) and Prescriptions (Ought Propositions) are the ***only*** kind of propositions"
 therefore:
 "Any System that reliably creates and understands descriptive and prescriptive propositions should be called generally intelligent."
 
@@ -58,7 +58,7 @@ The fact these are the *only* two kinds of proposition, which gives a *sufficien
 
 What are the implications? 
 1) Instead of the original turing test, which relies on fooling the interlocutor, this test is of real scientific and ethical significance, covers everything from "iPad *is* Black" to "Gravity *is* the curvature of spacetime" and more, from "One ought to love one's neighbour" to golden rule and more. 
-2) Perhaps CogSci can take this as their highest goal, how do we move into descriptive and prescriptive space given a pre-programmed set of descriptions and prescriptions, I am aware that this is kind of an innatist persepctive. 
+2) Perhaps CogSci can take this as their highest goal, how do we move into descriptive and prescriptive space given a pre-programmed set of descriptions and prescriptions, I am aware that this is kind of an innatist perspective. 
 
 
 Note: I have very little knowledge 
@@ -91,9 +91,9 @@ This Insight is advocated by many People in implicit Form but I have never come 
 In implicit Form : 
 1) Quote from Russell : Love and Pity for Suffering ("Oughts"), Knowledge ("Is")
 ![Pasted image 20230502231556.png](/img/user/Attachments/Pasted%20image%2020230502231556.png)
-2) Quote from Einstein : Observe the sublte Similarity of "Truth" (Is) and "Justice" (Ought)
+2) Quote from Einstein : Observe the subtle Similarity of "Truth" (Is) and "Justice" (Ought)
 ![D6EADC9F-887E-40C7-8B29-81BF4035FC18.jpeg](/img/user/Attachments/D6EADC9F-887E-40C7-8B29-81BF4035FC18.jpeg)
-3) Quote from Malcolm X : same as Einstein (a good Analogy is Curiosity (Is) and Ethics (Ought))
+3) Quote from Malcolm X : same as Einstein (a good Analogy is Science (Is) and Ethics (Ought))
 ![69659DE2-1643-45B1-ABB4-C3659DAF52A9.jpeg](/img/user/Attachments/69659DE2-1643-45B1-ABB4-C3659DAF52A9.jpeg)
 
 Q - Implications?
