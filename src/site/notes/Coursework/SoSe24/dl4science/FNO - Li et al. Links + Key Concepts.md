@@ -40,7 +40,7 @@ They experiment with Burgers’ equation, Darcy flow, and Navier-Stokes equation
 [[Hessian\|Hessian]]
 [[Coursework/SoSe24/dl4science/Dirichlet Boundary\|Dirichlet Boundary]]
 [[Coursework/SoSe24/dl4science/Convolution Theorem\|Convolution Theorem]]
-[[Fast Fourier Transform (FFT)\|Fast Fourier Transform (FFT)]]
+[[Coursework/SoSe24/dl4science/Discrete, Fast Fourier Transform (D, FFT)\|Discrete, Fast Fourier Transform (D, FFT)]]
 [[MCMC\|MCMC]]
 [[ResNet\|ResNet]]
 
