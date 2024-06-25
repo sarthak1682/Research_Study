@@ -26,6 +26,8 @@
 # Misc
 "Instead, we need a model that preserves relative rotational information and is only invariant to global rotations": Is a motivation for the proof
 
+[[How to present a theory paper?\|How to present a theory paper?]], also, ask him to give a number on how many ppl summarized it. 
+[[What can be sure about that we could not have been before?\|What can be sure about that we could not have been before?]]
 
 today
 
