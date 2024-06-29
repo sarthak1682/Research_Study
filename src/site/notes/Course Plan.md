@@ -33,16 +33,21 @@ WiSe_24
 | Logic for CS                            |              | 6        | General    |                                                                                 |
 | dl4nlp                                  | Schuetze     | 6        | General    | Can be challenging                                                              |
 | Phil of DL/Phil of Science              | ?            | 9 (?)    | General    | Gotta write an Essay of 6k Words, even if not credited, take it, engage with it |
-| Seminar Kutyniok (Math of AI)/Practical |              |          | RelAI      | Dunno next sem or Summer?                                                       |
+| Seminar Kutyniok (Math of AI)/Practical |              | 5/6      | RelAI      | Dunno next sem or Summer?                                                       |
 |                                         |              | 26/31/40 |            |                                                                                 |
 | Analysis III                            | -            | -        | Math/RelAI | MIT OCW                                                                         |
 
 
 SoSe_24
 
-| Course_Name | Prof. | ECTS | Tag | Comment                                                 |
-| ----------- | ----- | ---- | --- | ------------------------------------------------------- |
-| Causality   | -     | -    | -   | Do it pro bono, seems interesting, preferably a seminar |
+| Course_Name                       | Prof.                                                 | ECTS | Tag  | Comment                                                  |
+| --------------------------------- | ----------------------------------------------------- | ---- | ---- | -------------------------------------------------------- |
+| Causality                         | -                                                     | -    | -    | Do it pro bono, seems interesting, preferably a seminar  |
+| Functional Analysis               | -                                                     | -    | -    | Needed for GNN Thesis listed on Prof. Kutyniok's Website |
+| Advanced DL for Physics           |                                                       | 5    |      |                                                          |
+| ITP (Interactive Theorem Proving) | Jasmin Blanchette                                     | 6    | Math | Also, AI4Math                                            |
+| Practical I                       | try Cremers' "Creation of DL Methods"                 | 10   |      |                                                          |
+| Practical II                      | search for a Dl4science praktikum if there exists one |      |      |                                                          |
 
 
 
