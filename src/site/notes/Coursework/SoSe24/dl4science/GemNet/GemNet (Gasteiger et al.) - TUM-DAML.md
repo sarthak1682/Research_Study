@@ -69,3 +69,6 @@ representing in the form of angles, and dihedral angles. Our work is focused on 
 
 			
 
+
+
+[[Coursework/SoSe24/dl4science/GemNet/Structure of Presentation\|Structure of Presentation]]

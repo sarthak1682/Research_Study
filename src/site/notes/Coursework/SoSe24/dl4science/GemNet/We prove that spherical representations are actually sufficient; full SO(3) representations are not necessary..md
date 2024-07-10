@@ -10,6 +10,6 @@ GNNs for molecules typically incorporate directional information in one of two w
 			How much? 
 		directional representations actually provide the same expressivity as SO(3) representations for predictions in R3 (proof)
 			[[Coursework/SoSe24/dl4science/GemNet/preliminaries\|preliminaries]]
-			We achieve this by showing that the SO(3)-based [[Coursework/SoSe24/dl4science/GemNet/tensor field network (TFN)\|tensor field network (TFN)]] variant used by Dym & Maron  is equivalent to a [[similar model based on spherical representations, in the case of rotationally invariant predictions\|similar model based on spherical representations, in the case of rotationally invariant predictions]]. 
+			We achieve this by showing that the SO(3)-based [[Coursework/SoSe24/dl4science/GemNet/tensor field network (TFN)\|tensor field network (TFN)]] variant used by Dym & Maron  is equivalent to a [[Coursework/SoSe24/dl4science/GemNet/similar model based on spherical representations, in the case of rotationally invariant predictions\|similar model based on spherical representations, in the case of rotationally invariant predictions]]. 
 	
 
