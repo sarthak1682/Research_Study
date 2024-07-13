@@ -3,7 +3,6 @@
 ---
 
 ---
-
 Statistical Learning
 	Natural Data (High-D) actually lies in a low-D Space
 
@@ -111,6 +110,9 @@ Almost Everywhere
 	• **Almost Everywhere**: A property is said to hold almost everywhere if it holds for all points except for those in a set of measure zero.
 	The function f(x) = 1/x is defined for all x \neq 0. It is undefined at x = 0. The set where the function is undefined (\{0\}) has Lebesgue measure zero. Therefore, we can say f(x) = 1/x is defined almost everywhere on \mathbb{R}.
 
+
+
+![Screenshot 2024-07-10 at 20.07.47.png](/img/user/Attachments/Screenshot%202024-07-10%20at%2020.07.47.png)
 
 Simple SGD
  $$\theta_{t+1} = \theta_t - \eta \nabla_{\theta} J(\theta_t) $$

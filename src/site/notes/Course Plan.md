@@ -32,13 +32,16 @@ WiSe_24
 | Uncertainty Q.                          | Huellermeier | 6        | RelAI(?)   |                                                                                 |
 | Logic for CS                            |              | 6        | General    |                                                                                 |
 | dl4nlp                                  | Schuetze     | 6        | General    | Can be challenging                                                              |
+| Protein Pred. II for CS                 | Rost         | 8        | dl4science | Get the material of PP I                                                        |
 | Phil of DL/Phil of Science              | ?            | 9 (?)    | General    | Gotta write an Essay of 6k Words, even if not credited, take it, engage with it |
 | Seminar Kutyniok (Math of AI)/Practical |              | 5/6      | RelAI      | Dunno next sem or Summer?                                                       |
-|                                         |              | 26/31/40 |            |                                                                                 |
+|                                         |              | 34/39/48 |            |                                                                                 |
 | Analysis III                            | -            | -        | Math/RelAI | MIT OCW                                                                         |
 
 
 SoSe_24
+
+Work on a research paper in this Sem otherwise, waste a year!
 
 | Course_Name                       | Prof.                                                 | ECTS | Tag  | Comment                                                  |
 | --------------------------------- | ----------------------------------------------------- | ---- | ---- | -------------------------------------------------------- |
