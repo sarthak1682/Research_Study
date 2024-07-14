@@ -13,3 +13,7 @@ Ref:
 
 Notes are in the physical Note, get them here!
 #TODO
+
+
+A Jacobian is a matrix of partial derivatives that represents how a vector-valued function changes with respect to its inputs. For a function f: ℝⁿ → ℝᵐ, the Jacobian J is an m × n matrix where each element J[i,j] is the partial derivative of the i-th output with respect to the j-th input.
+
