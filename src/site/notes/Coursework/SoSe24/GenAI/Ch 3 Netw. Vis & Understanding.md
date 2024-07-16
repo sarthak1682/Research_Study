@@ -34,6 +34,7 @@ Last Layer: Dim Reduction
 Maximally Activating Patches
 1. Pick a Layer (conv5: 128x13x13), a channel (result of a filter)" 17/128
 2. Pass many Images, record Values of a channel
+3. Extract the regions (patches) from the input images that maximally activate the chosen filter in the specified layer and channel.
 
 
 Saliency via Occlusion
@@ -53,8 +54,6 @@ Uncovering Biases
 
 ##### Guided BackProp to Generate Images
 
-
-
 What's it about? 
 	modify the backward pass to filter out negative gradients, which can result in clearer and more interpretable visualizations of what features the network has learned to identify
 
@@ -67,7 +66,7 @@ How to do it?
 
 
 
-##### Gradient Ascent to Vis. Feat. 
+##### Gradient Ascent for Vis. Feat. 
 
 What is about?
 	Generate a synthetic Image that maximally activates a neuron. 
@@ -85,7 +84,7 @@ where  f_i  is the activation of the neuron of interest in the chosen layer.
 
 $x_{\text{new}} = x_{\text{old}} + \alpha \cdot \text{sign}(\nabla_x L)$
 
-Here,  x_{\text{new}}  and  x_{\text{old}}  are the new and current versions of the input image,  \alpha  is a small step size to control the magnitude of changes, and  \nabla_x L  is the gradient of the loss function with respect to the input image pixels.
+Here,  $x_{\text{new}}$  and  $x_{\text{old}}$  are the new and current versions of the input image,  $\alpha$  is a small step size to control the magnitude of changes, and  $\nabla_x L$  is the gradient of the loss function with respect to the input image pixels.
 	5.	Iteration: Repeat the process for several iterations or until the activation of the chosen neuron reaches a desired level or stabilizes.
 
 
@@ -142,13 +141,13 @@ How to?
 
 The Enhancement Step
 	The algorithm takes layer activations (of a chosen layer ofc) and amplifies them
-		How? 
-		- Let's denote our input image as I and the activation of a particular layer in the network as A(I).
-		- We want to modify I to maximize A(I). This is done through gradient ascent.
-		- The gradient of A with respect to I, ∇I A(I), tells us how to change I to increase A.
-		- The update step can be expressed as: I' = I + η * ∇I A(I) Where:
-		    - I' is the updated image
-		    - η (eta) is the learning rate or step size
+How? 
+	- Let's denote our input image as I and the activation of a particular layer in the network as A(I).
+	- We want to modify I to maximize A(I). This is done through gradient ascent.
+	- The gradient of A with respect to I, ∇I A(I), tells us how to change I to increase A.
+	- The update step can be expressed as: I' = I + η * ∇I A(I) Where:
+		- I' is the updated image
+		- η (eta) is the learning rate or step size
 
 ![Screenshot 2024-07-13 at 17.05.46.png](/img/user/Attachments/Screenshot%202024-07-13%20at%2017.05.46.png)
 
@@ -219,28 +218,36 @@ Before:
 ![Screenshot 2024-07-13 at 17.33.30.png](/img/user/Attachments/Screenshot%202024-07-13%20at%2017.33.30.png)
 
 - Input:
-    - Content: An image of a flower field (likely tulips)
+    - Content: An image of a flower field 
     - Style set: Multiple artistic images representing various styles
 - Network Architecture:
-    - An encoder-decoder structure is shown (the triangular shapes)
+    - An encoder-decoder structure
     - The encoder compresses the content image
     - The decoder generates the stylized output
 - Loss Functions:
     - RGB Loss: Compares the output to the content image in color space
-    - Perceptual Loss: Uses a pre-trained ImageNet model (fixed, not dependent on style) to compare features of the content and stylized images
+    - Perceptual Loss: Uses a pre-trained ImageNet model (fixed, not dependent on style) to compare features of the content and stylized images, helps maintain the content structure but not optimized for style transfer. 
 - Adversarial Component:
     - A discriminator (D) is used, introducing an adversarial loss
-    - This likely helps in generating more convincing stylizations
+    - This helps in generating more convincing stylizations
 - Output:
     - A stylized version of the content image, maintaining the overall structure but adopting artistic characteristics
 
 
 After:
 ![Screenshot 2024-07-13 at 17.34.09.png](/img/user/Attachments/Screenshot%202024-07-13%20at%2017.34.09.png)
-E(x): "style-dependent content representation"
+
 
 ![Screenshot 2024-07-13 at 17.35.06.png](/img/user/Attachments/Screenshot%202024-07-13%20at%2017.35.06.png)
 
 SAC Loss:
 The loss measures how different the encoded content is after going through the stylization process (G) and being re-encoded (E), compared to the original encoded content.
 - A lower loss means the stylized image retains more of the original content structure.
+- Unlike the fixed perceptual loss, this new loss is style-dependent.
+- The content representation E(content) adapts based on the target style.
+- This allows for better preservation of content while being more flexible to different styles.
+
+Transformed Image Loss:
+    - Replaces the simple RGB loss from the first image.
+    - Uses a transformation T() on both the original and stylized images.
+    - This likely allows for more sophisticated comparisons between the content and stylized images.

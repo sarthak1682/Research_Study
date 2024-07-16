@@ -56,6 +56,20 @@ Expressiveness:
 
 
 ##### Regularization
+
+For what? 
+	prevent overfitting, improve generalization, and stabilize solutions
+
+How to? 
+.	L1 Regularization (Lasso):
+	•	Adds a penalty equal to the absolute value of the magnitude of coefficients.
+	•	Effect: Can drive some coefficients to zero, effectively performing feature selection.
+		$\text{Loss function} = \text{Original Loss} + \lambda \sum_{i} |\theta_i|$
+	2.	L2 Regularization (Ridge):
+	•	Adds a penalty equal to the square of the magnitude of coefficients.
+	•	Effect: Shrinks coefficients but doesn’t necessarily set any to zero.
+		$\text{Loss function} = \text{Original Loss} + \lambda \sum_{i} \theta_i^2$
+****
 Dropout
 
 	![Pasted image 20240712164435.png](/img/user/Attachments/Pasted%20image%2020240712164435.png) Randomly set Neurons to zero
@@ -117,33 +131,36 @@ FC to Conv: If the output from a FC layer is  (N, M) , you reshape it to  (N, H,
 
 
 Power of Small Filters
-![Pasted image 20240712171345.png](/img/user/Attachments/Pasted%20image%2020240712171345.png)
- \text{Number of Multiply-Adds} = H{\prime} \times W{\prime} \times K_H \times K_W \times C_{\text{in}} \times C_{\text{out}} 
 
-	•	 H{\prime} \times W{\prime}  is the number of output pixels.
-	•	 K_H \times K_W \times C_{\text{in}}  is the number of parameters (weights) per kernel.
-	•	 C_{\text{out}}  is the number of output channels.
+
+![Pasted image 20240712171345.png](/img/user/Attachments/Pasted%20image%2020240712171345.png)
+$\text{Number of Multiply-Adds} = H{\prime} \times W{\prime} \times K_H \times K_W \times C_{\text{in}} \times C_{\text{out}}$
+$\text{Number of Weights} =  \times K_H \times K_W \times C_{\text{in}} \times C_{\text{out}}$
+
+$H{\prime} \times W{\prime}$  is the number of output pixels.
+$K_H \times K_W \times C_{\text{in}}$  is the number of parameters (weights) per kernel.	
+$C_{\text{out}}$  is the number of output channels.
 
 Example Calculation
 
 For example, if:
 
-	•	Input size  H \times W \times C_{\text{in}} = 32 \times 32 \times 3  (a 32x32 RGB image),
-	•	Kernel size  K_H \times K_W \times C_{\text{in}} \times C_{\text{out}} = 3 \times 3 \times 3 \times 64  (a 3x3 kernel with 3 input channels and 64 output channels),
-	•	Output size  H{\prime} \times W{\prime} \times C_{\text{out}} = 32 \times 32 \times 64 ,
-
-then the number of multiply-adds would be:
-
- \text{Number of Multiply-Adds} = 32 \times 32 \times 3 \times 3 \times 3 \times 64 = 1,179,648 
+Input size $H \times W \times C_{\text{in}} = 32 \times 32 \times 3$  (a 32x32 RGB image),
+Kernel size  $K_H \times K_W \times C_{\text{in}} \times C_{\text{out}} = 3 \times 3 \times 3 \times 64$  (a 3x3 kernel with 3 input channels and 64 output channels),
+Output size  $H{\prime} \times W{\prime} \times C_{\text{out}} = 32 \times 32 \times 64$, 
+	then the number of multiply-adds would be:
+	$\text{Number of Multiply-Adds} = 32 \times 32 \times 3 \times 3 \times 3 \times 64 = 1,179,648$
+ 
 
 
 ![Pasted image 20240712171402.png](/img/user/Attachments/Pasted%20image%2020240712171402.png)
 ##### Normalization
 
-Decorrelation refers to the process of transforming the data so that the features (variables) are uncorrelated with each other. In other words, after decorrelation, the covariance matrix of the data becomes diagonal, with zeros in the off-diagonal elements, indicating no linear correlation between different features.
+Decorrelation? 
+	Decorrelation refers to the process of transforming the data so that the features (variables) are uncorrelated with each other. In other words, after decorrelation, the covariance matrix of the data becomes diagonal, with zeros in the off-diagonal elements, indicating no linear correlation between different features.
 
-
-Whitening (or sphering) extends decorrelation by additionally scaling each feature to have unit variance, resulting in a dataset where all variables are uncorrelated and have the same variance. This transformation can be seen as a normalization step that removes redundant information and makes the data distribution more spherical in the transformed space.
+Whitening? 
+	Whitening (or sphering) extends decorrelation by additionally scaling each feature to have unit variance, resulting in a dataset where all variables are uncorrelated and have the same variance. This transformation can be seen as a normalization step that removes redundant information and makes the data distribution more spherical in the transformed space.
 
 
 ![Pasted image 20240712171811.png](/img/user/Attachments/Pasted%20image%2020240712171811.png)

@@ -2,9 +2,6 @@
 {"dg-publish":true,"permalink":"/coursework/so-se24/gen-ai/ch-1-intro/","noteIcon":""}
 ---
 
----
-Statistical Learning
-	Natural Data (High-D) actually lies in a low-D Space
 
 ###### Generative Modelling
 
@@ -17,12 +14,20 @@ Implicit DE: learn model that can sample from p_model without explicitly definin
 	 e.g. GANs
 
 
-"CNNs is in effect an overcomplete basis" 
-	An overcomplete basis is a set of vectors that span a space but contain more vectors than the dimensionality of the space. For instance, in a 2D space, having three or more vectors that can still represent any point in the space would constitute an overcomplete basis. This redundancy allows for more flexibility and robustness in representing data.
-
 
 ###### Generative vs Discriminative Models
-Bayes' Rule
+
+
+ Feature                | Generative Models                                                  | Discriminative Models                                           |
+| ---------------------- | ------------------------------------------------------------------ | --------------------------------------------------------------- |
+| **Objective**          | Model joint distribution \( P(X, Y) \), Model Likelihood and Prior | Model conditional distribution \(     P(Y\|X)), Model Posterior |
+| **Data Understanding** | Understands how data is generated                                  | Focuses on decision boundaries between classes                  |
+| **Tasks**              | Classification, density    estimation, data generation             | Primarily classification                                        |
+| **Flexibility**        | Can handle missing data and multiple tasks                         | Optimized for classification                                    |
+| **Examples**           | Naive Bayes, HMMs, GMMs, VAEs, GANs                                | Logistic Regression, SVMs, Random Forests      |
+| **Assumptions**        | Often make strong assumptions about data distribution              | Fewer assumptions, more focused on discriminative power         |
+
+##### Bayes' Rule
 
 $$ P(Y|X) = \frac{P(X|Y) \cdot P(Y)}{P(X)} $$
 
@@ -43,21 +48,14 @@ where:
 - \( \frac{P(Y_1)}{P(Y_2)} \) is the prior ratio, the ratio of the initial probabilities of hypotheses \( Y_1 \) and \( Y_2 \).
 
 
-| Feature                | Generative Models                                                  | Discriminative Models                                           |
-| ---------------------- | ------------------------------------------------------------------ | --------------------------------------------------------------- |
-| **Objective**          | Model joint distribution \( P(X, Y) \), Model Likelihood and Prior | Model conditional distribution \(     P(Y\|X)), Model Posterior |
-| **Data Understanding** | Understands how data is generated                                  | Focuses on decision boundaries between classes                  |
-| **Tasks**              | Classification, density    estimation, data generation             | Primarily classification                                        |
-| **Flexibility**        | Can handle missing data and multiple tasks                         | Optimized for classification                                    |
-| **Examples**           | Naive Bayes, HMMs, GMMs, VAEs, GANs                                | Logistic Regression, SVMs, Neural Networks, Random Forests      |
-| **Assumptions**        | Often make strong assumptions about data distribution              | Fewer assumptions, more focused on discriminative power         |
-|                        |                                                                    |                                                                 |
 
-
-
+##### Terminology
 
 Latent Space
 	Latent space refers to an abstract, often lower-dimensional space that captures the essential features and structure of the original data. It is a way to represent data in a compressed form, where each point in the latent space encodes significant information about the original data.
+
+Statistical Learning
+	Natural Data (High-D) actually lies in a low-D Space
 
 
 Complexity of KNN
@@ -112,8 +110,10 @@ Almost Everywhere
 
 
 
-![Screenshot 2024-07-10 at 20.07.47.png](/img/user/Attachments/Screenshot%202024-07-10%20at%2020.07.47.png)
 
+
+
+##### Optimizers
 Simple SGD
  $$\theta_{t+1} = \theta_t - \eta \nabla_{\theta} J(\theta_t) $$
 
@@ -124,10 +124,10 @@ Momentum is a method that helps accelerate SGD in the **relevant direction and d
 
 where:
 
-	•	 v_t  is the velocity vector at time step  t ,
-	•	 \gamma  (often set to 0.9 or a similar value) is the momentum parameter,
-	•	 \eta  is the learning rate,
-	•	 \nabla_{\theta} J(\theta)  is the gradient of the loss function  J  with respect to the parameters  \theta .
+v_t $ is the velocity vector at time step  t ,
+$\gamma$  (often set to 0.9 or a similar value) is the momentum parameter,
+ $\eta$ is the learning rate,
+$\nabla_{\theta} J(\theta)$  is the gradient of the loss function  J  with respect to the parameters  \theta .
 
 The parameters are then updated as:
 
@@ -135,3 +135,9 @@ The parameters are then updated as:
 This allows the updates to **build up speed** in directions where gradients consistently point.
 
 
+
+Nesterov Momentum
+
+ $$\theta_{t+1} = \theta_t - v_{t+1} $$
+where,
+$$v_{t+1} = \gamma v_t + \eta \nabla_{\theta} J(\theta -  \gamma v_t) $$

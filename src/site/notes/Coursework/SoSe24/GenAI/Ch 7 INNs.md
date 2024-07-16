@@ -115,10 +115,25 @@ How?
 ![Screenshot 2024-07-15 at 00.16.06.png](/img/user/Attachments/Screenshot%202024-07-15%20at%2000.16.06.png)
 
 
-Loss? 
-#TODO 
-
 
 
 Recovering Model Invariances? 
-#TODO 
+![Screenshot 2024-07-16 at 01.13.16.png](/img/user/Attachments/Screenshot%202024-07-16%20at%2001.13.16.png)
+
+- Input: The process starts with an input image, in this case, a snow leopard.
+- Model Representation: The input image goes through a series of convolutional layers (conv1, conv2, conv3, etc.) followed by fully connected layers (fc6, fc7, fc8). This represents a typical deep neural network architecture.
+- Output: The model outputs "snow leopard" as the classification result.
+- Invariance Learning: The goal is to learn the distribution of invariances in the model representation. This is done using a conditional INN.
+- Latent Space: The cINN maps the input to a latent space 'z', which follows a normal distribution N(0,1).
+- Conditional Factors: The cINN takes into account conditional factors like background, pose, etc.
+- Reconstruction: The process aims to reconstruct the original input from the latent representation. This is represented by the 'D' (likely standing for Decoder) block at the bottom right.
+- Complete Representation: The method creates a complete representation of inputs that can be decoded to reconstruct the original image.
+
+
+Test: follows through sampling different invariances and feeding them through the trained cINN and decoder (No encoder, no fc layers), the blue distr. is a learned distr. of invariances
+
+
+Uses: 
+1) Vis. model inv. 
+2) Interpr. Adv. Attacks
+3) Semantic analysis of netw. training
