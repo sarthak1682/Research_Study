@@ -22,7 +22,7 @@ What?
 
 Change of variables? 
 	$p_{x} (x)=p_{z}(f(x))*|detDf(x)|$
-	Z = f(x) is an invertible, diff. function 
+	z = f(x) is an invertible, diff. function 
 	Df(x) is the Jacobian of f(x)
 	p_z(z) is typically $N(z|0,I)$
 	

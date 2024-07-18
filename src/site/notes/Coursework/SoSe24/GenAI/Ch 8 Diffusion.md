@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/coursework/so-se24/gen-ai/ch-8-diffusion/","noteIcon":""}
 ---
 
----
+Deno---
 
 ##### Intro
 Denoising Diffusion Models
@@ -69,8 +69,8 @@ Where:
 - β_t and ᾱ_t are the same as in the forward process
 
 Learning objective: The model is trained to minimize the difference between the predicted noise ε_θ(x_t, t) and the actual noise used to generate x_t from x_0 in the forward process.
-	The score function, typically denoted as  s_\theta(x_t, t) , represents the gradient of the log probability density function of the data at time  t  with respect to the data point  x_t :
-	 s_\theta(x_t, t) = \nabla_{x_t} \log p_t(x_t) 
+	The score function, typically denoted as $s_\theta(x_t, t)$ , represents the gradient of the log probability density function of the data at time  t  with respect to the data point  x_t :
+	 $s_\theta(x_t, t) = \nabla_{x_t} \log p_t(x_t)$ 
 
 Content-Detail Tradeoff
 ![Screenshot 2024-07-16 at 00.22.37.png](/img/user/Attachments/Screenshot%202024-07-16%20at%2000.22.37.png)

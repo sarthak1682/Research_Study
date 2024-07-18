@@ -20,7 +20,6 @@ We compare “sat” (query) with the keys (attributes) of all the other words (
 Based on the relevance scores (how well the keys match the query), we combine the values (actual information) of all words to understand the context of “sat.”
 
 Simplified Mathematical Explanation
-
 	1.	Query, Key, Value Vectors:
 Each word in a sentence is represented as a vector (a list of numbers). For the word “sat,” we have:
 	•	Query vector  Q_{sat} 
@@ -40,10 +39,6 @@ These scores are passed through a softmax function to convert them into probabil
 Given the sentence "The cat sat on the mat", let's use the embedding dimension $d_{model}$ for simplicity. The sentence has 6 words, so the input matrix $X$  is $6 \times 4$ 
 
 ###### Step-by-Step Explanation
-
-
-Here's the markdown version with proper LaTeX delimiters:
-
 **Input Embedding Matrix $X$**
    The input sentence "The cat sat on the mat" is converted into an embedding matrix $X$:
    $$
@@ -167,19 +162,9 @@ $$\text{Attention Weights} = \text{softmax}(Q K^T)$$
 
 #### Multi-Headed Attention
 
-Sure! Let's delve into multi-headed attention and how it builds on the single-head attention mechanism we discussed earlier.
-
 ##### What is Multi-Headed Attention?
 
 Multi-headed attention is an extension of the attention mechanism where multiple attention "heads" are used simultaneously. Each head independently computes attention, allowing the model to focus on different parts of the input. The outputs from each head are then concatenated and transformed to produce the final result.
-
-##### Why Multi-Headed Attention?
-
-The primary reasons for using multi-headed attention are:
-
-1. **Diversity of Focus**: Different heads can learn to focus on different parts of the input, capturing various aspects of the data.
-2. **Representation Learning**: By having multiple attention mechanisms, the model can learn richer and more nuanced representations.
-3. **Improved Performance**: Empirically, multi-headed attention has been shown to improve the performance of models on various tasks.
 
 ##### Process of Multi-Headed Attention
 
@@ -339,6 +324,438 @@ Positional Encoding for X_1: PE_1 [0.8415, 0.5403, 0.0001, 1.0000]
 
 #### ViT
 
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/coursework/so-se24/gen-ai/practice-67890-important-code/#p10" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+### P10
+
+#### Multi-Headed Self-Attention
+```
+
+class SelfAttention2d(nn.Module):
+
+def __init__(
+
+self,
+
+embed_dim: int = 256,
+
+head_dim: int = 32,
+
+value_dim: int = 32,
+
+num_heads: int = 8,
+
+):
+
+  
+
+super().__init__() # Initialize the nn.Module
+
+  
+
+self.embed_dim = embed_dim
+
+self.head_dim = head_dim
+
+self.value_dim = value_dim
+
+self.num_heads = num_heads
+
+  
+
+# single head linear layers
+
+self.q = nn.Linear(embed_dim, head_dim * num_heads, bias = False)
+
+self.k = nn.Linear(embed_dim, head_dim * num_heads, bias = False)
+
+self.v = nn.Linear(embed_dim, value_dim * num_heads, bias = False)
+
+self.out = nn.Linear(value_dim * num_heads, embed_dim, bias = False)
+
+  
+  
+
+def forward(self, x: torch.Tensor) -> torch.Tensor:
+
+B, D, H, W = x.shape
+
+print(f'x.shape: {x.shape}')
+
+  
+
+#reshape inputs
+
+x = x.view(B, D, H * W).transpose(1, 2)
+
+print(f'x.shape: {x.shape}')
+
+  
+  
+
+#apply linear projections
+
+q = self.q(x)
+
+k = self.k(x)
+
+v = self.v(x)
+
+  
+
+print(f'q.shape: {q.shape}')
+
+print(f'k.shape: {k.shape}')
+
+print(f'v.shape: {v.shape}')
+
+  
+
+# Reshape q, k, v for multi-head attention
+
+q = rearrange(q, 'b n (h d) -> b h n d', h=self.num_heads) # (B, num_heads, H*W, head_dim)
+
+k = rearrange(k, 'b n (h d) -> b h n d', h=self.num_heads) # (B, num_heads, H*W, head_dim)
+
+v = rearrange(v, 'b n (h d) -> b h n d', h=self.num_heads) # (B, num_heads, H*W, value_dim)
+
+  
+
+print(f'q.shape: {q.shape}')
+
+print(f'k.shape: {k.shape}')
+
+print(f'v.shape: {v.shape}')
+
+  
+  
+  
+
+#compute attention scores
+
+scores = torch.einsum('b h i d, b h j d -> b h i j', q, k)
+
+  
+
+print(f'head_dim: {self.head_dim}')
+
+  
+
+scores = scores / math.sqrt(self.head_dim)
+
+  
+
+print(f'scores.shape: {scores.shape}')
+
+  
+
+#apply softmax
+
+attention = F.softmax(scores, dim = -1)
+
+  
+
+print(f'attention.shape: {attention.shape}')
+
+  
+
+#compute attention output
+
+attn_out = torch.einsum('b h i j, b h j d -> b h i d', attention, v)
+
+print(f'attn_out.shape: {attn_out.shape}')
+
+  
+
+attn_out = rearrange(attn_out, 'b h n d -> b n (h d)')
+
+print(f'attn_out.shape: {attn_out.shape}')
+
+  
+  
+  
+
+#attn_out = attn_out.transpose(1, 2).view(B, D, H, W)
+
+  
+
+#print(attn_out[0][0][0])
+
+#print(f'attn_out.shape: {attn_out.shape}')
+
+#print(attn_out[0][0][0])
+
+  
+  
+
+out = self.out(attn_out)
+
+print(f'out.shape: {out.shape}')
+
+  
+  
+
+out = out.transpose(1, 2).view(B, D, H, W)
+
+print(f'out.shape: {out.shape}')
+
+  
+
+print(out[1][0][0])
+
+  
+  
+
+return out
+
+
+```
+
+
+
+#### ViT
+```
+
+class ResidualModule(nn.Module):
+
+def __init__(
+
+self,
+
+inner_module: nn.Module
+
+):
+
+super().__init__()
+
+self.inner_module = inner_module
+
+  
+
+def forward(self, x: torch.Tensor) -> torch.Tensor:
+
+return x + self.inner_module(x)
+
+  
+
+class FeedForwardBlock(nn.Module):
+
+def __init__(self, hidden_size: int, mlp_size: int, p_dropout: float):
+
+super().__init__()
+
+self.linear1 = nn.Linear(hidden_size, mlp_size)
+
+self.dropout1 = nn.Dropout(p_dropout)
+
+self.linear2 = nn.Linear(mlp_size, hidden_size)
+
+self.dropout2 = nn.Dropout(p_dropout)
+
+self.activation = nn.GELU()
+
+  
+
+def forward(self, x: torch.Tensor) -> torch.Tensor:
+
+x = self.linear1(x)
+
+x = self.dropout1(x)
+
+x = self.activation(x)
+
+x = self.linear2(x)
+
+x = self.dropout2(x)
+
+return x
+
+  
+
+class SelfAttentionTransformerBlock(nn.Module):
+
+def __init__(self, hidden_size: int, mlp_size: int, n_heads: int, p_dropout: float):
+
+super().__init__()
+
+self.norm1 = nn.LayerNorm(hidden_size)
+
+self.attention = nn.MultiheadAttention(hidden_size, n_heads, dropout=p_dropout, batch_first=True)
+
+self.norm2 = nn.LayerNorm(hidden_size)
+
+self.ffn = FeedForwardBlock(hidden_size, mlp_size, p_dropout)
+
+  
+
+def forward(self, x: torch.Tensor) -> torch.Tensor:
+
+residual = x
+
+x = self.norm1(x)
+
+x, _ = self.attention(x, x, x)
+
+x = residual + x
+
+residual = x
+
+x = self.norm2(x)
+
+x = self.ffn(x)
+
+x = residual + x
+
+return x
+
+  
+
+  
+
+class VisionTransformer(nn.Module):
+
+def __init__(
+
+self,
+
+in_channels: int = 3,
+
+patch_size: int = 4,
+
+image_size: int = 32,
+
+layers: int = 6,
+
+hidden_size: int = 256,
+
+mlp_size: int = 512,
+
+n_heads: int = 8,
+
+num_classes: int = 10,
+
+p_dropout: float = 0.2,
+
+):
+
+super().__init__()
+
+  
+
+self.patch_size = patch_size
+
+self.hidden_size = hidden_size
+
+num_patches = (image_size // patch_size) ** 2
+
+patch_dim = in_channels * patch_size * patch_size
+
+self.patch_embed = nn.Linear(patch_dim, hidden_size)
+
+self.cls_token = nn.Parameter(torch.randn(1, 1, hidden_size))
+
+self.pos_embed = nn.Parameter(torch.randn(1, num_patches + 1, hidden_size))
+
+self.dropout = nn.Dropout(p_dropout)
+
+self.transformer_blocks = nn.Sequential(*[
+
+SelfAttentionTransformerBlock(hidden_size, mlp_size, n_heads, p_dropout)
+
+for _ in range(layers)
+
+])
+
+self.norm = nn.LayerNorm(hidden_size)
+
+self.head = nn.Linear(hidden_size, num_classes)
+
+  
+  
+
+def patchify(self, x: torch.Tensor) -> torch.Tensor:
+
+"""Takes an image tensor of shape (B, C, H, W) and transforms it to a sequence of patches (B, L, D), with a learnable linear projection after flattening,
+
+and a standard additive positional encoding applied. Note that the activations in (Vision) Transformer implementations are
+
+typically passed around in channels-_last_ layout, different from typical PyTorch norms.
+
+  
+
+Args:
+
+x (torch.Tensor): Input tensor of shape (B, C, H, W)
+
+  
+
+Returns:
+
+torch.Tensor: Embedded patch sequence tensor with positional encodings applied and shape (B, L, D)
+
+"""
+
+B, C, H, W = x.shape
+
+x = x.reshape(B, C, H // self.patch_size, self.patch_size, W // self.patch_size, self.patch_size)
+
+x = x.permute(0, 2, 4, 1, 3, 5).contiguous()
+
+x = x.view(B, -1, C * self.patch_size * self.patch_size)
+
+x = self.patch_embed(x)
+
+cls_tokens = self.cls_token.expand(B, -1, -1)
+
+x = torch.cat((cls_tokens, x), dim=1)
+
+x = x + self.pos_embed
+
+x = self.dropout(x)
+
+return x
+
+def forward(self, x: torch.Tensor) -> torch.Tensor:
+
+"""Takes an image tensor of shape (B, C, H, W), applies patching, a standard ViT and then an output projection of the CLS token
+
+to finally create a class logit prediction of shape (B, N_cls)
+
+  
+
+Args:
+
+x (torch.Tensor): Input tensor of shape (B, C, H, W)
+
+  
+
+Returns:
+
+torch.Tensor: Output logits of shape (B, N_cls)
+
+"""
+
+x = self.patchify(x)
+
+x = self.transformer_blocks(x)
+
+x = self.norm(x)
+
+x = x[:, 0] # Use only the CLS token
+
+x = self.head(x)
+
+return x
+
+```
+
+
+
+
+</div></div>
 
 
 

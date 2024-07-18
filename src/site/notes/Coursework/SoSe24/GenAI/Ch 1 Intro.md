@@ -14,7 +14,8 @@ Implicit DE: learn model that can sample from p_model without explicitly definin
 	 e.g. GANs
 
 
-
+Taxonomy
+![Screenshot 2024-07-17 at 01.32.00.png](/img/user/Attachments/Screenshot%202024-07-17%20at%2001.32.00.png)
 ###### Generative vs Discriminative Models
 
 
@@ -43,9 +44,9 @@ Bayes' Rule can be expressed in terms of the posterior ratio, likelihood ratio, 
 $$ \frac{P(Y_1|X)}{P(Y_2|X)} = \frac{P(X|Y_1)}{P(X|Y_2)} \cdot \frac{P(Y_1)}{P(Y_2)} $$
 
 where:
-- \( \frac{P(Y_1|X)}{P(Y_2|X)} \) is the posterior ratio, the ratio of the probabilities of hypotheses \( Y_1 \) and \( Y_2 \) given the data \( X \).
-- \( \frac{P(X|Y_1)}{P(X|Y_2)} \) is the likelihood ratio, the ratio of the probabilities of the data \( X \) given hypotheses \( Y_1 \) and \( Y_2 \).
-- \( \frac{P(Y_1)}{P(Y_2)} \) is the prior ratio, the ratio of the initial probabilities of hypotheses \( Y_1 \) and \( Y_2 \).
+- $\frac{P(Y_1|X)}{P(Y_2|X)}$ is the posterior ratio, the ratio of the probabilities of hypotheses \( Y_1 \) and \( Y_2 \) given the data \( X \).
+- $\frac{P(X|Y_1)}{P(X|Y_2)}$ is the likelihood ratio, the ratio of the probabilities of the data \( X \) given hypotheses \( Y_1 \) and \( Y_2 \).
+- $\frac{P(Y_1)}{P(Y_2)}$ is the prior ratio, the ratio of the initial probabilities of hypotheses \( Y_1 \) and \( Y_2 \).
 
 
 
@@ -66,7 +67,7 @@ Complexity of KNN
 Softmax
 	For a given vector z = (z_1, z_2, …, z_n) , the softmax function  $$\sigma(\mathbf{z})$$  is defined as:
 	
-	 $$\sigma(z_i) = \frac{e^{z_i}}{\sum_{j=1}^{n} e^{z_j}} $$
+	 $$\sigma(z_i) = \frac{e^{z_i}}{\sum_{j=1}^{n} e^{z_j}}$$
 CE-Loss
 For a single data point, given the true label  y  (as a one-hot vector) and the predicted probability distribution  \hat{y}  (output of the softmax function), the cross-entropy loss  L  is defined as:
 
@@ -102,6 +103,18 @@ $$ D_{KL}(P \parallel Q) = \sum_{x} P(x) \log \left( \frac{P(x)}{Q(x)} \right) $
 2.	Non-Negativity:  D_{KL}(P \parallel Q) \geq 0  for all distributions  P  and  Q . It is zero if and only if  P  and  Q  are identical almost everywhere.
 3.	Information Gain: KL divergence can be interpreted as the expected amount of additional information required to encode samples from  P  using  Q  instead of the true distribution  P .
 
+
+KL-Loss
+- In VAEs, we have:
+    - q(z|x) = N(μ, σ²): the encoder's output (approximate posterior)
+    - p(z) = N(0, 1): the prior distribution (standard normal)
+- The KL divergence between these distributions is: KL(q(z|x) || p(z)) = ∫ q(z|x) log(q(z|x) / p(z)) dz
+- For multivariate Gaussian distributions, this has a closed-form solution: KL(N(μ, σ²) || N(0, 1)) = ½ ∑ᵢ (μᵢ² + σᵢ² - log(σᵢ²) - 1)
+- In practice, we work with log(σ²) for numerical stability. Let's denote log(σ²) as λ: KL = ½ ∑ᵢ (μᵢ² + exp(λᵢ) - λᵢ - 1)
+- Rearranging: KL = ½ ∑ᵢ (μᵢ² + exp(λᵢ) - (λᵢ + 1))
+- Negating (for minimization during training): -KL = -½ ∑ᵢ (μᵢ² + exp(λᵢ) - (λᵢ + 1))
+- Distributing the negative sign: -KL = ½ ∑ᵢ (-μᵢ² - exp(λᵢ) + λᵢ + 1)
+- Final form: -KL = ½ ∑ᵢ (1 + λᵢ - μᵢ² - exp(λᵢ))
 
 Almost Everywhere
 	• **Measure Zero**: A set has measure zero if its “size” or “volume” is zero in the context of the given measure. For instance, in the real numbers with the usual Lebesgue measure, a single point has measure zero, and a countable set of points (like the rational numbers) also has measure zero.
@@ -141,3 +154,57 @@ Nesterov Momentum
  $$\theta_{t+1} = \theta_t - v_{t+1} $$
 where,
 $$v_{t+1} = \gamma v_t + \eta \nabla_{\theta} J(\theta -  \gamma v_t) $$
+
+
+
+
+
+RMSProp (Root Mean Square Propagation):
+
+$$ v_t = \beta v_{t-1} + (1 - \beta) g_t^2 $$
+
+$$ \theta_t = \theta_{t-1} - \frac{\eta}{\sqrt{v_t + \epsilon}} g_t $$
+
+Where:
+
+- $v_t$: Exponential moving average of squared gradients
+- $\beta$: Decay rate (typically 0.9)
+- $g_t$: Gradient at time step $t$
+- $\theta_t$: Parameters at time step $t$
+- $\eta$: Learning rate
+- $\epsilon$: Small constant to avoid division by zero (typically 1e-8)
+
+RMSProp adv:
+
+=> Adaptive Learning Rate: since it uses a moving average of squared gradients to normalize, learning rate gets adjusted in a dynmical way. Not too small, not too large. It also handles sparse gradients well with the normalization.
+
+Adam (Adaptive Moment Estimation):
+
+$$ m_t = \beta_1 m_{t-1} + (1 - \beta_1) g_t $$
+
+$$ v_t = \beta_2 v_{t-1} + (1 - \beta_2) g_t^2 $$
+
+$$ \hat{m}_t = \frac{m_t}{1 - \beta_1^t} $$
+
+$$ \hat{v}_t = \frac{v_t}{1 - \beta_2^t} $$
+
+$$ \theta_t = \theta_{t-1} - \frac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \hat{m}_t $$
+
+Where:
+
+- $m_t$: First moment estimate (mean of gradients)
+- $v_t$: Second moment estimate (uncentered variance of gradients)
+- $\beta_1$: Exponential decay rate for first moment estimate (typically 0.9)
+- $\beta_2$: Exponential decay rate for second moment estimate (typically 0.999)
+- $g_t$: Gradient at time step $t$
+- $\theta_t$: Parameters at time step $t$
+- $\hat{m}_t$: Bias-corrected first moment estimate
+- $\hat{v}_t$: Bias-corrected second moment estimate
+- $\eta$: Learning rate
+- $\epsilon$: Small constant to avoid division by zero (typically 1e-8)
+- $t$: Time step
+  
+
+Adam Adv.:
+
+=> combines adv. of momentum and RMSProp., it adjusts the learning rate for each parameter based on the moving average of the squared gradients (like RMSProp) and incorporates a moving average of the gradients themselves (momentum)

@@ -6,7 +6,7 @@
 
 #### Motivation & Setting
 
-Problem: GANs do not mod any explicit density Function, we still wanna sample from complex, High-D training D. No direct way? 
+Problem: GANs do not model any explicit density Function, we still wanna sample from complex, High-D training D. No direct way? 
 Solution: Sample from random Noise, learn transformation to training distr. 
 
 
@@ -22,11 +22,15 @@ Motivation for Discriminator
 ![Screenshot 2024-07-14 at 00.25.12.png](/img/user/Attachments/Screenshot%202024-07-14%20at%2000.25.12.png)
 
 ![Screenshot 2024-07-14 at 00.25.32.png](/img/user/Attachments/Screenshot%202024-07-14%20at%2000.25.32.png)
+
 The minimax Game
-
-
 Max likelihood of D being wrong (instead of **Min** (D_right), works much better, since the gradient doesn't vanish -> maximizing log(D(G(z))) instead of minimizing log(1 - D(G(z))).
 
+When the generator’s samples are poor in the early stages of training,  $D(G(\mathbf{z}))$  will be close to 0. 
+
+Vanishing Gradient:
+When minimizing  $\log(1 - D(G(\mathbf{z})))$ , if  $D(G(\mathbf{z}))$  is close to 0,  $1 - D(G(\mathbf{z}))$  will be close to 1, leading to  $\log(1 - D(G(\mathbf{z})))$  being close to 0.
+	•	The gradient of  $\log(1 - D(G(\mathbf{z})))$  with respect to $G(\mathbf{z})$  becomes very small when  $D(G(\mathbf{z}))$  is close to 0, causing the vanishing gradient problem. This means the generator learns very slowly.
 
 
 #### Results/Arch/SOTA
@@ -47,7 +51,7 @@ Pro?
 	Beautiful examples
 Con? 
 	Diff. to train (stability of min-max)
-	Mode Collaps
+	Mode Collapse
 
 
 
