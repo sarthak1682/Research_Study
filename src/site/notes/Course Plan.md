@@ -37,7 +37,9 @@ WiSe_24
 | Seminar Kutyniok (Math of AI)/Practical |              | 5/6      | RelAI      | Dunno next sem or Summer?                                                       |
 |                                         |              | 34/39/48 |            |                                                                                 |
 | Analysis III                            | -            | -        | Math/RelAI | MIT OCW                                                                         |
+|                                         |              |          |            |                                                                                 |
 
+Consider even taking one course fewer (Logic), and do research
 
 SoSe_24
 

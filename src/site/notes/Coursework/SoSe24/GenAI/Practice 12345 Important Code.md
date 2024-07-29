@@ -188,7 +188,7 @@ Q2: What mathematical operation Laplacian filter corresponds to?
 
   
 
-The (sum of) **second-order partial derivatives** effectively measures how the intensity of the image varies in the vicinity of each pixel, which in turn, helps with **edge-detection** (i.e. whenever there is a zero crossing, an edge gets detected!)
+
 
 
 
@@ -526,13 +526,13 @@ class MLP:
 		
 		for layer in reversed(self.layers):
 		
-		grad = layer.backward(grad)
+			grad = layer.backward(grad)
 		
-		def update(self, learning_rate): #update each layer via gradient descent
+	def update(self, learning_rate): #update each layer via gradient descent
 		
 		for layer in self.layers:
 		
-		layer.update(learning_rate)
+			layer.update(learning_rate)
 	
 	def training_step(self, x, y, learning_rate):
 	

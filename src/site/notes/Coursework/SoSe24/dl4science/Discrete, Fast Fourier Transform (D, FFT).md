@@ -17,3 +17,15 @@
 
 Reducible- great explanation on change of repr., very short algo. If ever in doubt, watch this one again. 
 
+![Screenshot 2024-07-24 at 22.05.04.png](/img/user/Attachments/Screenshot%202024-07-24%20at%2022.05.04.png)
+
+DFT: O(N^2)
+
+FFT uses the fact that w_N^2 = w_N/2
+
+FFT: O(Nlog(N))
+
+Use: Polynomials in Coeff into supporting point pres. 
+
+find supporting points: x^3 + x
+![Screenshot 2024-07-24 at 22.07.45.png](/img/user/Attachments/Screenshot%202024-07-24%20at%2022.07.45.png)

@@ -208,3 +208,13 @@ Where:
 Adam Adv.:
 
 => combines adv. of momentum and RMSProp., it adjusts the learning rate for each parameter based on the moving average of the squared gradients (like RMSProp) and incorporates a moving average of the gradients themselves (momentum)
+
+
+#### Filters
+
+
+
+##### Laplacian 
+
+How does it detect the edges? 
+The (sum of) **second-order partial derivatives** effectively measures how the intensity of the image varies in the vicinity of each pixel, which in turn, helps with **edge-detection** (i.e. whenever there is a zero crossing, an edge gets detected!)

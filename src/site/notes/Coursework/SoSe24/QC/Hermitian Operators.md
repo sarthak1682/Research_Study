@@ -17,4 +17,4 @@ All obs. (herm. op.) satisfy this inner product property
 ![Screenshot 2024-06-06 at 14.56.27.png](/img/user/Attachments/Screenshot%202024-06-06%20at%2014.56.27.png)
 
 
-nd (20) to a full-scale grammar of Engli
+nd (20) to a full-scale grammar of English

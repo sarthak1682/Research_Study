@@ -105,7 +105,7 @@ Yes, they seem to be related in the following Way.
 More Factual Truths make for a better ethical System. 
 (e.g. knowing that Child-Beating **is** traumatic gets a long way in deciding whether or not smack your Child.)
 
-Ethics limit the sort of Curiosity one can fulfill. 
+Ethics limit the sort of Curiosity one can fulfil. 
 (e.g Oppenheimer **ought** to have stopped the Manhattan Project.)
 
 Q - How does that relate to Well-Being?

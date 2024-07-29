@@ -65,7 +65,6 @@ $$
 
 
 
-
 ## Multi-Qubit Systems
 
 ### Quantum Registers
@@ -186,21 +185,21 @@ $$
 
 where, 
 $$ 
-\hat{\alpha} = \frac{1}{sqrt(2)}(\alpha + \beta)
+\hat{\alpha} = \frac{1}{\sqrt(2)}(\alpha + \beta)
 $$$$
-\hat{\beta} = \frac{1}{sqrt(2)}(\alpha - \beta)
+\hat{\beta} = \frac{1}{\sqrt(2)}(\alpha - \beta)
 
 $$
 and where, 
 $$
 \tilde{\alpha}
-=  \frac{1}{sqrt(2)}(\alpha - i\beta)
+=  \frac{1}{\sqrt(2)}(\alpha - i\beta)
 
 
 
 $$
 $$
-\tilde{\beta} =  \frac{1}{sqrt(2)}(\alpha + i\beta)
+\tilde{\beta} =  \frac{1}{\sqrt(2)}(\alpha + i\beta)
 $$
 
 
@@ -220,7 +219,9 @@ Addition is still addition, scalar mult is still the same
 Linear Op. = Abstract Map, Matrix is the repr. of that in a particular basis
 
 
-given an observable, how can one get all the possible values that one can measure?  find the eigenvalues
+given an observable, how can one get all the possible values that one can measure?  
+	find the eigenvalues of that operator
+
 to find out which particular eigenstate corresponds to that particular value, find the eigenvector
 eignv. = def. states, eignval. = def. values
 [[Coursework/SoSe24/QC/Hermitian Operators\|Hermitian Operators]]
@@ -241,7 +242,54 @@ $$
 
 ### Exp. Value
 
+(of a measurement wrt O and p)
+
 
 $$ E = tr(O\rho)$$
+
+the expectation value of an observable is a measure of the average outcome of measurements of that observable on a quantum system in a given state. For a system of two particles, the expectation value of an observable  AB  (where  A  acts on the first particle and  B  acts on the second particle) is given by the expression $\langle \psi | A \otimes B | \psi \rangle$ . 
+
+Example: psi= Bell State for 2 Qubits, A, B = Pauli Matrix in the Z-Dir. 
+
 ## No Cloning Theorem 
+
+
+Proof that cloning is not possible for arbitrary states:
+
+
+The fact that copying is not possible in general can be seen as follows: Let a target bit $|\sigma\rangle$ be given. If it were possible to copy both state $|\phi\rangle$ and state $|\psi\rangle$ to $|\sigma\rangle$, there would have to be a unitary transformation $U$ so that
+
+$$ \forall |x\rangle : U(|x\rangle \otimes |\sigma\rangle) = |x\rangle \otimes |x\rangle $$
+
+Then it applies to $|\phi\rangle, |\psi\rangle$:
+
+$$ U(|\phi\rangle \otimes |\sigma\rangle) = |\phi\rangle \otimes |\phi\rangle $$
+and
+$$ U(|\psi\rangle \otimes |\sigma\rangle) = |\psi\rangle \otimes |\psi\rangle $$
+
+	For all unitary transformations $U$ and all vectors $v, w$:
+
+$$ \langle Uv|Uw\rangle = \langle v|w\rangle $$
+
+So it must also apply:
+
+$$ \langle U(|\phi\rangle \otimes |\sigma\rangle)|U(|\psi\rangle \otimes |\sigma\rangle)\rangle = \langle\phi \otimes \sigma|\psi \otimes \sigma\rangle \tag{1.49} $$
+
+and thus
+
+$$ \langle\phi \otimes \phi|\psi \otimes \psi\rangle = \langle\phi \otimes \sigma|\psi \otimes \sigma\rangle \tag{1.50} $$
+
+Because the scalar product of tensors is equal to the product of the individual scalar products, it can be pulled apart:
+
+i.e the general Rule is: ⟨ϕ ⊗ σ|ψ ⊗ τ⟩ = ⟨ϕ|ψ⟩⟨σ|τ⟩
+
+$$ \langle\phi|\psi\rangle \langle\phi|\psi\rangle = \langle\phi|\psi\rangle \langle\sigma|\sigma\rangle \tag{1.51} $$
+
+Since $\langle\sigma|\sigma\rangle = 1$ applies to all qubits, it follows that
+
+$$ \langle\phi|\psi\rangle^2 = \langle\phi|\psi\rangle \tag{1.52} $$
+
+The equation $a^2 = a$ is only valid for $a = 1$ and $a = 0$. $|\phi\rangle$ and $|\psi\rangle$ must therefore be identical or orthogonal. The combination of $|\sigma\rangle$ and $U$ can therefore only be used to copy certain states, but not arbitrary states. This theorem is an important limitation for quantum computers and a fundamental difference to classical computers, where copying bits is used all the time.
+
+
 

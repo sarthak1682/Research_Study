@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/coursework/so-se24/gen-ai/ch-8-diffusion/","noteIcon":""}
 ---
 
-Deno---
+---
 
 ##### Intro
 Denoising Diffusion Models

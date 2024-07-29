@@ -43,7 +43,7 @@ Composition of Flows?
 	Det: 
 	$det(Df)=det\prod_{k=1}^{K}Df_{k}=\prod_{k=1}^{K}det(Df_k)$
 	Likelihood: $$ \underset{\theta}{\operatorname{argmax}} \sum_{i=1}^{N} logp_z(f(x_i|\theta)) + \sum_{k=1}^{K}log|detDf_k(x_i|\theta| $$
-	The likelihood formula in the image combines these elements:
+	The likelihood formula combines these elements:
 	- It evaluates how likely the transformed points are under p_Z
 	- It accounts for the volume change induced by f (through the Jacobian determinant)
 
@@ -81,7 +81,7 @@ How does it work?
 	•	Inverse Process ([y, z] \rightarrow x): The observed data y and residuals z are used to reconstruct the input x
 
 MMD? 
-	Maximally Mean Discrepancy: used to match the distribution of x to a prior distribution, ensuring that the input data follows a known distribution.
+	Maximum Mean Discrepancy: used to match the distribution of x to a prior distribution, ensuring that the input data follows a known distribution.
 
 MMD for z?
 	This ensures that the residual z matches a standard normal distribution, typically $\mathcal{N}(0,1)$
