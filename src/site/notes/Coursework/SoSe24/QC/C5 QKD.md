@@ -18,7 +18,7 @@ don't share a quantum channel like BB84, just receive a bell pair from a common 
 ### Basic Steps of E91
 
 1. A source generates pairs of entangled particles and sends one particle from each pair to Alice and the other to Bob.
-2. Alice and Bob independently and randomly choose measurement bases for each particle they receive.
+2. Alice and Bob independently and randomly choose measurement bases for each particle they receive. Bases A1/B1, A3/B2 are used to generate the key. 
 3. After measurements, Alice and Bob publicly announce their measurement bases (but not the results).
 4. They keep the results from measurements where they happened to choose compatible bases, discarding the rest.
 5. A subset of the kept results is used to check for eavesdropping by testing Bell's inequality.

@@ -7,7 +7,7 @@ Link: [Can Machines Learn How Clouds Work? The Epistemic Implications of Machine
 
 ---
 Conclusion
-Although I do agree with the main thrust of the this strand of thought, which is basically end-to-end empirical training is unlikely to success, but I don't do so for her reasons, if she gives any. She repeatedly asserts "widespread failure in neural network generalisability to the lack of process representation" but fails to give reasons/evidence. This kind of claims are susceptible to math and do stand to illuminate phil of sci, but not from this paper. 
+Although I do agree with the main thrust of the this strand of thought, which is basically end-to-end empirical training is unlikely to succeed, but I don't do so for her reasons, if she gives any. She repeatedly asserts "widespread failure in neural network generalisability to the lack of process representation" but fails to give reasons/evidence. This kind of claims are susceptible to math and do stand to illuminate phil of sci, but not from this paper. 
 
 
 

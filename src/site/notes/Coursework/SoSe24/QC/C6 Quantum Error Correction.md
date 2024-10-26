@@ -24,6 +24,8 @@ Decoding
 Correct, for one bit flip (d-1/2)
 detect, for upto 2 (d-1)
 notation: n,k,d: 3,1,3 (k = no of transmitted logical bits)
+n = trnasmitter physical qubits
+d = distance 
 
 p: bit flipped
 ![Screenshot 2024-07-26 at 01.16.13.png](/img/user/Attachments/Screenshot%202024-07-26%20at%2001.16.13.png)
@@ -37,7 +39,7 @@ decrease the error prob from O(p) to p^2
 
 
 
-## 3 Qubit Bit-Flip Rep Code
+## 3 Qubit Bit-Flip Repetition Code
 
 ![Screenshot 2024-07-26 at 01.56.14.png](/img/user/Attachments/Screenshot%202024-07-26%20at%2001.56.14.png)
 
@@ -115,3 +117,4 @@ with this both errors : p^2
 
 Transversal Gates? 
 Can be applied by applying some gate on each qubit individually. 
+![Screenshot 2024-10-06 at 00.48.00.png](/img/user/Attachments/Screenshot%202024-10-06%20at%2000.48.00.png)

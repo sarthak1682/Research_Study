@@ -50,7 +50,9 @@ Classical?
 Circuit? 
 ![Screenshot 2024-07-24 at 16.27.50.png](/img/user/Attachments/Screenshot%202024-07-24%20at%2016.27.50.png)
 
-
+Interpreting the result:
+- If all n qubits are measured as |0>, the function is constant.
+- If any of the n qubits are measured as |1>, the function is balanced.
 
 States? 
 	

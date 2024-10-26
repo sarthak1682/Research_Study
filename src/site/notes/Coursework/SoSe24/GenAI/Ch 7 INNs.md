@@ -34,7 +34,7 @@ What's a Flow?
 	A param Function f(x)
 		invertible
 		diff. 
-		has an eff. computable Inverse and Jacobian Det [[Coursework/SoSe24/ML/Jacobian Matrix\|Jacobian Matrix]]
+		has an eff. computable Inverse and Jacobian Det [[Coursework/WiSe24-25/ML/Jacobian Matrix\|Jacobian Matrix]]
 
 
 #### Composition of Flows, (affine) coupling Layers, INNs

@@ -8,14 +8,14 @@
 	2. strenghts (ofc) (counterfactual kind)
 	3. limits/challenges (his own, the subs. paper)
 2. How is it extended in the community? How would you review it if in a conference? 
-	1. citations
+	1. citations 
 	2. openreview 
 	3. ask GPT
 3. New research in the community based upon that? 
 	1. citations (generally what do they do?/how do they mention GemNet)
 4. What makes it stand out? How does it compare to other paper?
 	1. Stand out? 
-	2. Other Papers (contemporary stuff)
+	2. Other Papers (contemporary stuff) [[Coursework/SoSe24/dl4science/GemNet/Citations\|Citations]]
 5. Future Research. If you would do research on that? 
 	1. did someone think of not doing the inf cutoff thingy? 
 
