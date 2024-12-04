@@ -60,3 +60,12 @@ There seems to be a lot of interesting mistakes in the third Argument
 
 So, he ain't a vulgar emotivist, it seems. 
 
+---
+
+[Is–ought problem - Wikipedia](https://en.wikipedia.org/wiki/Is–ought_problem)
+
+![Screenshot 2024-11-18 at 17.12.16.png](/img/user/Attachments/Screenshot%202024-11-18%20at%2017.12.16.png)
+
+
+
+----

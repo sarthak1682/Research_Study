@@ -3,6 +3,15 @@
 ---
 
 ---
+loss function, different kinds (physics/chem/biology) etc.. #CompSci 
+Loss function induces a bias against false +ves? #CompSci 
+
+
+Use CoT/GoT to train LLMs to answer in say 80 words? #CompSci 
+Set number limits on Activations (like only to 3 decimal digits) #CompSci 
+
+
+
 Is Hume’s problem still a problem? #Phil
 
 Relation to “Metaphysics+Epistemology” and “Ethics+Aesthetics” #Phil 
@@ -44,12 +53,18 @@ graph theory, describing the entire system from the inside? #Math #CompSci
 
 What does it mean to identify/resolve a disagreement? #Phil 
 	Start from a common core, trace through another branch, could be a couple of nodes that are the deciding factor, at least figure out what it "hinges on"
+		An Algo would be interesting, no?
+
+
 
 
 What kind of description is an “explanation”  #Phil #CompSci 
 	Reach of a node? 
 
 Propositional Spaces? 
+
+Architecture of a Question? #Phil 
+
 
 Self-Org and Society of Mind? #CompSci #CogSci 
 
@@ -74,6 +89,11 @@ Relation to the symbol grounding problem #CogSci
 
 Relation to the orthogonality thesis/ Alignment/MechInterpretability #Phil #CompSci 
 [The Alignment Problem: How Can Machines Learn Human Values? - Brian Christian - Google Books](https://books.google.de/books?hl=en&lr=&id=TdL2DwAAQBAJ&oi=fnd&pg=PT23&ots=0X44a1Hz9r&sig=fKsCtcQBK8H7JV4PPq4mLVhig1w&redir_esc=y#v=onepage&q&f=false)
+[[Coursework/WiSe24-25/Theo-Phil-AI/Paper/Paper_Res/Alignment Course\|Alignment Course]]
+
+Arbitrary Description to Arbitrary Prescriptions? That seems weird
+	Maybe there are theorems? 
+		What about that Adolf Hitler Wiki Example of you will have to come back to some nodes from time to time? 
 
 
 Putting Morality on the Map? 
@@ -133,6 +153,22 @@ A Survey on Knowledge Graphs: Representation, Construction, and Applications
 [https://arxiv.org/abs/2302.05019](https://arxiv.org/abs/2302.05019)
 **A Comprehensive Survey on Automatic Knowledge Graph Construction**
 
+
+Mechanistic Interpr. 
+[Fact Finding: Attempting to Reverse-Engineer Factual Recall on the Neuron Level (Post 1) — AI Alignment Forum](https://www.alignmentforum.org/posts/iGuwZTHWb6DFY3sKB/fact-finding-attempting-to-reverse-engineer-factual-recall)
+	[openreview.net/pdf?id=ePUVetPKu6](https://openreview.net/pdf?id=ePUVetPKu6)
+
+[2209.00626](https://arxiv.org/pdf/2209.00626)
+take a look at the Ngo Paper: AGI Safety from first principles 
+
+[2410.03772](https://arxiv.org/pdf/2410.03772) PKE
+[ARC's first technical report: Eliciting Latent Knowledge — LessWrong](https://www.lesswrong.com/posts/qHCDysDnvhteW7kRd/arc-s-first-technical-report-eliciting-latent-knowledge)
+
+
+[\[1709.08568\] The Consciousness Prior](https://arxiv.org/abs/1709.08568)
+
+
 Conv with LLMs
 [https://gemini.google.com/app/ff73a07225ada5f7](https://gemini.google.com/app/ff73a07225ada5f7) : General Discussion (quite useless though)
 [https://chatgpt.com/c/0e199dd8-5ef5-4fe7-85fb-b7ddeeb7424a](https://chatgpt.com/c/0e199dd8-5ef5-4fe7-85fb-b7ddeeb7424a) (mainly for knowledge Graphs)
+
