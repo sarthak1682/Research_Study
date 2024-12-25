@@ -4,6 +4,13 @@
 
 ---
 
+
+> [!PDF|255, 208, 0] [[Millière and Buckner - 2024 - A Philosophical Introduction to Language Models --.pdf#page=4&annotation=919R|Millière and Buckner - 2024 - A Philosophical Introduction to Language Models --, p.4]]
+> 𝑘𝑖𝑛𝑔   +  𝑤𝑜𝑚𝑎𝑛  −  𝑚𝑎𝑛  ≈  𝑞𝑢𝑒𝑒𝑛,
+
+what if it's phytoplankton instead of queen? How do you figure that out? it's going to be a token right? 
+
+
 > [!PDF|255, 208, 0] [[Millière and Buckner - 2024 - A Philosophical Introduction to Language Models --.pdf#page=12&annotation=885R|Millière and Buckner - 2024 - A Philosophical Introduction to Language Models --, p.12]]
 > One interpretation of these results is 
 
@@ -12,12 +19,13 @@ important para
 > [!PDF|255, 208, 0] [[Millière and Buckner - 2024 - A Philosophical Introduction to Language Models --.pdf#page=13&annotation=898R|Millière and Buckner - 2024 - A Philosophical Introduction to Language Models --, p.13]]
 > continuity principle.
 
-refresh
+ [[zotero_storage/499BENSZ/Smolensky_2022a_Cont_Compositionality\|Smolensky_2022a_Cont_Compositionality]]
+ 
 
 > [!PDF|255, 208, 0] [[Millière and Buckner - 2024 - A Philosophical Introduction to Language Models --.pdf#page=13&annotation=901R|Millière and Buckner - 2024 - A Philosophical Introduction to Language Models --, p.13]]
 >  underlying syntactic structures (Pearl 2022). 
 
-what did he write? 
+what did he write? #Q
 
 > [!PDF|255, 208, 0] [[Millière and Buckner - 2024 - A Philosophical Introduction to Language Models --.pdf#page=14&annotation=904R|Millière and Buckner - 2024 - A Philosophical Introduction to Language Models --, p.14]]
 >  LLMs provide at least an empiricist existence proof that statistical learners can induce syntactic rules without the aid of innate grammar
@@ -94,13 +102,10 @@ whoa! #imp
 [[zotero_storage/499BENSZ/Activation_Patching\|Activation_Patching]]
 
 [[zotero_storage/499BENSZ/CS1_Induction_Heads\|CS1_Induction_Heads]]
-[[CS2_Mod_Add\|CS2_Mod_Add]]
-[[CS3_World_Models\|CS3_World_Models]]
+[[zotero_storage/499BENSZ/CS2_Mod_Add\|CS2_Mod_Add]]
+[[zotero_storage/499BENSZ/CS3_World_Models\|CS3_World_Models]]
 
 
-
-> [!PDF|255, 208, 0] [[Millière and Buckner - 2024 - A Philosophical Introduction to Language Models - .pdf#page=25&annotation=1109R|Millière and Buckner - 2024 - A Philosophical Introduction to Language Models - , p.25]]
-> There are three different kinds of ‘agent’ systems that build on the success of standard LLMs: (a) language agents that make use of external databases or tools; (b) embodied models that control a robotic body from natural language instructions with an LLM; and (c) multimodal models trained end-to-end to process actions in addition to text (Fig. 7
 
 
 > [!PDF|255, 208, 0] [[Millière and Buckner - 2024 - A Philosophical Introduction to Language Models - .pdf#page=17&annotation=1132R|Millière and Buckner - 2024 - A Philosophical Introduction to Language Models - , p.17]]
@@ -109,3 +114,7 @@ whoa! #imp
 
 > [!PDF|255, 208, 0] [[Millière and Buckner - 2024 - A Philosophical Introduction to Language Models - .pdf#page=20&annotation=1140R|Millière and Buckner - 2024 - A Philosophical Introduction to Language Models - , p.20]]
 > Any program or algorithm can be represented as a causal mode
+
+
+> [!PDF|255, 208, 0] [[Millière and Buckner - 2024 - A Philosophical Introduction to Language Models - .pdf#page=25&annotation=1109R|Millière and Buckner - 2024 - A Philosophical Introduction to Language Models - , p.25]]
+> There are three different kinds of ‘agent’ systems that build on the success of standard LLMs: (a) language agents that make use of external databases or tools; (b) embodied models that control a robotic body from natural language instructions with an LLM; and (c) multimodal models trained end-to-end to process actions in addition to text (Fig. 7

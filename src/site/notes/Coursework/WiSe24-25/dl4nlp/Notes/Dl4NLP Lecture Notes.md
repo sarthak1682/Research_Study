@@ -5,4 +5,6 @@
 ---
 [[Coursework/WiSe24-25/dl4nlp/Notes/W1_dl4nlp\|W1_dl4nlp]]
 [[Coursework/WiSe24-25/dl4nlp/Notes/W2_dl4nlp\|W2_dl4nlp]]
-[[Coursework/WiSe24-25/dl4nlp/Notes/W3_dl4nlp\|W3_dl4nlp]]
+[[Coursework/WiSe24-25/dl4nlp/Notes/W3_dl4nlp_Transformers\|W3_dl4nlp_Transformers]]
+
+[[Coursework/WiSe24-25/dl4nlp/Notes/W4_Bert\|W4_Bert]]

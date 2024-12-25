@@ -32,7 +32,7 @@ Nucleic Acids
 	Made up of Nucleotides (Monomer)
 		Phosphate
 		Sugar (Ribose/Deoxyribose)
-		Base (PSB) (AG CT)
+		Base (PSB) (AG CT) (have the info)
 	Polymer (DNA/RNA)
 		AGCT (DNA)
 		AGCU (RNA) (U is Uracil: Thymine without one methyl group)
