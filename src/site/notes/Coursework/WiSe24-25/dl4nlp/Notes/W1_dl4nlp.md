@@ -117,3 +117,7 @@ Problems with Softmax?
 
 [[Coursework/WiSe24-25/dl4nlp/Notes/FastText\|FastText]]
 
+> [!PDF|255, 208, 0] [[dl4nlp-slides-complete.pdf#page=23&annotation=8321R|dl4nlp-slides-complete, p.23]]
+> ine-tune them
+
+dsaDJAsd

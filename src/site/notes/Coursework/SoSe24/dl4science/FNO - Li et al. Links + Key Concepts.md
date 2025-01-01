@@ -36,8 +36,9 @@ They experiment with Burgers’ equation, Darcy flow, and Navier-Stokes equation
 
 ### Other Key Concepts
 
-[[Hamiltonian\|Hamiltonian]]
-[[Hessian\|Hessian]]
+[[Coursework/SoSe24/dl4science/Hamiltonian\|Hamiltonian]]
+[[Coursework/SoSe24/dl4science/Hessian\|Hessian]]
+[[Coursework/SoSe24/dl4science/Gradient\|Gradient]]
 [[Coursework/SoSe24/dl4science/Dirichlet Boundary\|Dirichlet Boundary]]
 [[Coursework/SoSe24/dl4science/Convolution Theorem\|Convolution Theorem]]
 [[Coursework/SoSe24/dl4science/Discrete, Fast Fourier Transform (D, FFT)\|Discrete, Fast Fourier Transform (D, FFT)]]
