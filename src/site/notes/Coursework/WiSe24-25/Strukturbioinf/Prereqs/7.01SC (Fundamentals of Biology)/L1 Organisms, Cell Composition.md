@@ -75,3 +75,31 @@ Nucleic Acids:
 
 
 ---
+
+Read [[Coursework/WiSe24-25/Strukturbioinf/Prereqs/Upto speed in Biology/Ch1\|Ch1]]
+
+
+Peptide: <20 AA
+Protein: >20 AA 
+
+Delta (G) < 0, Energy Released, Exergonic, "Spontaneous" (not necessary, needs a push: "Activation Energy")
+.. endergonic
+
+
+Catalysts decrease AC and allow a reaction to proceed. 
+
+Enzymes: Biological Catalysts (usually proteins, can be RNAs)
+
+![Screenshot 2025-01-01 at 22.32.20.png](/img/user/Attachments/Screenshot%202025-01-01%20at%2022.32.20.png)
+
+
+Enzymes are very specific for a particular reaction (unlike Platinum, which is useful for basically any reaction involving Hydrogen)
+
+the protein is generally quite large, the rest regulates the activity of the enzyme. 
+	Inhibitors (Rev/Irrev): Competitive (Binds active site) vs Non-Comp (Binds Elsewhere)![Screenshot 2025-01-01 at 22.49.39.png](/img/user/Attachments/Screenshot%202025-01-01%20at%2022.49.39.png)
+		Allosteric Activators/Inhibitors: Bind specific allosteric Site. 
+		pH/Temp can change Enzyme function 
+![Screenshot 2025-01-01 at 22.50.16.png](/img/user/Attachments/Screenshot%202025-01-01%20at%2022.50.16.png)
+
+![Screenshot 2025-01-01 at 22.50.52.png](/img/user/Attachments/Screenshot%202025-01-01%20at%2022.50.52.png)
+

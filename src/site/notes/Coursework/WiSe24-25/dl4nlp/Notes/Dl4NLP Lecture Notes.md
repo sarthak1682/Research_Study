@@ -8,3 +8,14 @@
 [[Coursework/WiSe24-25/dl4nlp/Notes/W3_dl4nlp_Transformers\|W3_dl4nlp_Transformers]]
 
 [[Coursework/WiSe24-25/dl4nlp/Notes/W4_Bert\|W4_Bert]]
+
+
+[[Coursework/WiSe24-25/dl4nlp/Notes/W5_BertBased\|W5_BertBased]]
+
+[[Coursework/WiSe24-25/dl4nlp/Notes/W6_PostBert\|W6_PostBert]]
+
+[[Coursework/WiSe24-25/dl4nlp/Notes/W7_GPT\|W7_GPT]]
+
+
+[[Coursework/WiSe24-25/dl4nlp/Notes/W8_Decoding\|W8_Decoding]]
+

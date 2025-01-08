@@ -8,6 +8,9 @@
 
 A saddle point is a critical point of a function where the function has a local maximum in one direction and a local minimum in another direction. It's like the center of a saddle on a horse, where you can go up in one direction and down in another.
 
+
+![Screenshot 2025-01-01 at 03.56.54.png](/img/user/Attachments/Screenshot%202025-01-01%20at%2003.56.54.png)
+
 - **Identifying Saddle Points:**
     
     1. **Find Critical Points:** Find the critical points by setting the gradient equal to zero: ∇f = **0**
@@ -29,3 +32,7 @@ A saddle point is a critical point of a function where the function has a local 
     
     
     The eigenvalues are 2 and -2. Since there's a positive and a negative eigenvalue, the point (0, 0) is a saddle point.
+
+
+
+

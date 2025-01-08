@@ -41,7 +41,7 @@ Where:
         
     - **Classifying Critical Points:** The Hessian is evaluated at the critical points.
         
-        - **Positive Definite Hessian (all eigenvalues positive):** The critical point is a local minimum.
+        - **Positive Definite Hessian (all eigenvalues positive):** The critical point is a local minimum. (Check only Det and Tr if there are only two variables involved.)
             
         - **Negative Definite Hessian (all eigenvalues negative):** The critical point is a local maximum.
             
