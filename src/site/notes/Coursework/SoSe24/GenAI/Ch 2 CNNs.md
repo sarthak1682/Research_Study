@@ -72,8 +72,10 @@ How to?
 ****
 Dropout
 
-	![Pasted image 20240712164435.png](/img/user/Attachments/Pasted%20image%2020240712164435.png) Randomly set Neurons to zero
-	![Pasted image 20240712164548.png](/img/user/Attachments/Pasted%20image%2020240712164548.png)
+
+![Pasted image 20240712164435.png](/img/user/Attachments/Pasted%20image%2020240712164435.png) Randomly set Neurons to zero
+![Pasted image 20240712164548.png](/img/user/Attachments/Pasted%20image%2020240712164548.png)
+
 
 
 

@@ -3,6 +3,10 @@
 ---
 
 ---
+[[L11_SbioInf_MM.canvas|L11_SbioInf_MM]]
+
+
+
 This presentation discusses protein folding and ab initio structure prediction. Let's break down the key concepts presented.
 
 
@@ -48,10 +52,10 @@ This slide describes the van der Waals interaction, a weak attractive force betw
 
  energy contributions from different interactions are additive; the interaction between two atoms is independent of their environment (transferability); and quantum mechanical effects are negligible as long as no bonds are broken.
 
-
+![Screenshot 2025-02-07 at 18.23.12.png](/img/user/Attachments/Screenshot%202025-02-07%20at%2018.23.12.png)
 **Slide 25: Hypotheses on Protein Folding**
 
-This slide presents some hypotheses about the protein folding process, including the idea that secondary structures may form early in the process and the role of hydrophobic collapse. It mentions the nucleation-propagation mechanism of helix formation.
+This slide presents some hypotheses about the protein folding process, including the idea that secondary structures may form early in the process and the role of hydrophobic collapse (hydrophobic (water-fearing) amino acid residues cluster together to minimize their exposure to water). It mentions the nucleation-propagation mechanism of helix formation (A small, specific region of the protein forms a stable **"nucleus"** of secondary structure (e.g., α-helix or β-sheet), Once the nucleus forms, the rest of the protein rapidly folds around it.).
 
 **Slide 26: Three Stages of Unassisted Protein Folding**
 
@@ -61,6 +65,18 @@ This slide illustrates a simplified view of protein folding, involving three sta
 **Slide 37: Exploring the Energy Landscape**
 
 This slide visually compares different methods for exploring the energy landscape, including gradient-based minimization, Metropolis Monte Carlo, and Molecular Dynamics. It highlights the trade-off between accuracy and speed. Molecular Dynamics simulates the actual physical movements of atoms, but it's computationally demanding. Monte Carlo randomly samples conformational space, and gradient-based minimization moves downhill on the energy surface.
+
+
+Slide 40: 
+- Key distinguishing features of protein native states include:
+
+	- Hydrophobic patterning (polar/nonpolar distribution)
+	
+	- Extensive hydrogen bonding network
+	
+	- Tight side-chain packing
+	
+	- Specific backbone and side-chain torsional angles
 
 
 **Slide 46: Molecular Dynamics**
@@ -74,8 +90,8 @@ These slides discuss the villin headpiece, a small, fast-folding protein, as a m
 **Slide 49: Overview of Protein Design**
 
 de novo design, designing protein-protein interactions, and designing ligand-binding proteins.  
-
+![Screenshot 2025-02-07 at 18.29.06.png](/img/user/Attachments/Screenshot%202025-02-07%20at%2018.29.06.png)
 **Slide 50: Some Facts about Proteins**
 
-This slide lists some general principles regarding protein structure and stability, including the location of hydrophobic and hydrophilic residues, the role of conserved residues, and the relationship between free energy and protein stability. The equation given is a more general form of the potential energy function.
+This slide lists some general principles regarding protein structure and stability, including the location of hydrophobic and hydrophilic residues, the role of conserved residues( tend to lie inside, or near the active site), and the relationship between free energy and protein stability. The equation given is a more general form of the potential energy function.
 

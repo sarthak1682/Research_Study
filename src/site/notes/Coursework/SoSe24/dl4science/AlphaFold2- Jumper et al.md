@@ -134,3 +134,9 @@ not much about data size but more about diversity
 
 ---
 only need to worry about triangles being 
+
+
+----
+
+
+

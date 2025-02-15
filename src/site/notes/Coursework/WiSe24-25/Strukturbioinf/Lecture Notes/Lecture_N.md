@@ -123,3 +123,31 @@ TOPS Diagrams
 
 ---
 [[Coursework/WiSe24-25/Strukturbioinf/Lecture Notes/L18\|L18]]
+
+
+---
+[[Coursework/WiSe24-25/Strukturbioinf/Lecture Notes/L19_Contact_Prediction\|L19_Contact_Prediction]]
+
+----
+
+[[Coursework/WiSe24-25/Strukturbioinf/Lecture Notes/L20_PP_Interaction\|L20_PP_Interaction]]
+
+---
+[[Coursework/WiSe24-25/Strukturbioinf/Lecture Notes/L21_Str_Fn_Reln\|L21_Str_Fn_Reln]]
+
+---
+
+[[Coursework/WiSe24-25/Strukturbioinf/Lecture Notes/L22_Functionally_Imp_Residues\|L22_Functionally_Imp_Residues]]
+
+---
+
+[[Coursework/WiSe24-25/Strukturbioinf/Lecture Notes/L23_Alt_Splicing\|L23_Alt_Splicing]]
+
+
+---
+[[Coursework/WiSe24-25/Strukturbioinf/Lecture Notes/L24_SNP\|L24_SNP]]
+
+---
+
+[[Coursework/WiSe24-25/Strukturbioinf/Lecture Notes/L25_Protein_Evo\|L25_Protein_Evo]]
+

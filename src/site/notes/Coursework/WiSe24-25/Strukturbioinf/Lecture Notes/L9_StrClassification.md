@@ -3,7 +3,7 @@
 ---
 
 ---
-
+[[L9_SBioInf_MM.canvas|L9_SBioInf_MM]]
 
 **Slide 2: Fold Space and Protein Evolution**
 
@@ -15,8 +15,6 @@
 
 **Slide 3: Divergent Evolution**
 
-This slide elaborates on the concept of divergent evolution.
-
 * **Shared Common Ancestor:**  Most folds likely originated from a smaller group of ancestral proteins.
 * **Duplication and Reuse:** Once a stable fold evolved, it was duplicated and reused for different functions through evolutionary processes.
 * **Modification of Existing Folds:**  It's easier for evolution to modify an existing fold than to create a completely new one from scratch.
@@ -25,7 +23,6 @@ This slide elaborates on the concept of divergent evolution.
 
 **Slide 4: Convergent Evolution**
 
-This slide elaborates on convergent evolution.
 
 * **Biophysically Favored Folds:** Certain folds are inherently more stable or efficient to pack, making them more likely to arise through evolution, even independently.
 * **Overrepresentation in PDB:**  The Protein Data Bank (PDB), a repository of protein structures, shows an overrepresentation of certain folds, supporting the idea of convergent evolution.
@@ -74,7 +71,7 @@ This slide explains the hierarchical organization of the SCOP database.
 **Slide 13: SCOP Hierarchy (Detailed)**
 
 alpha/beta: principally single beta-sheet with alpha-helices joining the individual strands
-alpha+beta: both units largely separated, anti|| strands usually joined by hairpins
+alpha+beta: both units largely separated, anti || strands usually joined by hairpins
 
 **Slide 14: SCOP2 Prototype**
 
@@ -121,6 +118,5 @@ CATH/SCOP Disagreements:
 **Underlying Reasons for Disagreements:**
 
 - **Manual vs. Automated Approaches:** SCOP relies more on expert manual curation, while CATH uses more automated methods. This can lead to differences in interpretation and judgment.
-    
-- **Different Criteria and Algorithms:** 
+  
 

@@ -3,21 +3,21 @@
 ---
 
 ---
-
+[[L15_SbioInf_MM.canvas|L15_SbioInf_MM]]
 
 **Slide 2: Diverse Functions of Membrane Proteins**
 
-This slide emphasizes the importance of membrane proteins, stating that they comprise approximately 30% of all proteins in a cell. It illustrates their diverse functions with examples like electron and proton transporters, channels, receptors, and enzymes, all situated within a cell membrane.
+This slide emphasizes the importance of membrane proteins, stating that they comprise approximately ==30% of all proteins in a cell==. It illustrates their diverse functions with examples like electron and ==proton transporters, channels, receptors, and enzymes==, all situated within a cell membrane.
 ![Screenshot 2025-01-08 at 08.18.26.png](/img/user/Attachments/Screenshot%202025-01-08%20at%2008.18.26.png)
 **Slide 3: Schematic Diagram of Typical Membrane Proteins**
 
 This slide provides a detailed schematic of a biological membrane, showing various types of membrane proteins:
 
-* **Integral proteins:** Embedded within the hydrophobic core of the membrane.  They can span the entire membrane (transmembrane) or be partially embedded.
-* **Peripheral proteins:** Associated with the membrane surface, often interacting with integral proteins or lipid head groups.
-* **Glycoproteins and Glycolipids:**  Proteins and lipids with attached carbohydrate chains, often found on the exterior surface of the membrane.
+* ==**Integral proteins:** Embedded within the hydrophobic core of the membrane.  They can span the entire membrane (transmembrane) or be partially embedded.==
+* ==**Peripheral proteins:** Associated with the membrane surface, often interacting with integral proteins or lipid head groups.==
+* ==**Glycoproteins and Glycolipids:**  Proteins and lipids with attached carbohydrate chains, often found on the exterior surface of the membrane.==
 
-The slide also highlights the phospholipid bilayer structure of the membrane, with its hydrophilic heads and hydrophobic tails. It differentiates between two main structural motifs of integral membrane proteins: alpha-helical bundles (common in many transmembrane proteins) and beta-barrels (often found in porins).
+The slide also highlights the phospholipid bilayer structure of the membrane, with its hydrophilic heads and hydrophobic tails. It differentiates between two main structural motifs of integral membrane proteins: ==alpha-helical bundles (common in many transmembrane proteins) and beta-barrels (often found in porins).==
 
 **Slide 4: Amino Acid Sequence and Transmembrane Disposition of Glycophorin A**
 
@@ -35,10 +35,10 @@ This slide presents bacteriorhodopsin, another example of a transmembrane protei
 
 This slide shifts to the computational aspect: predicting transmembrane helices from amino acid sequences.  It lists key properties of TM helices that inform these predictions:
 
-* **Apolarity:** Predominantly hydrophobic amino acid composition.
-* **Length:** Typically 12-35 residues.
-* **Loop Length:** Short loops between TM helices (less than 60 residues).
-* **Positive-Inside Rule:**  A tendency for positively charged residues (arginine and lysine) to be located on the cytoplasmic side of the membrane.
+* ==**Apolarity:** Predominantly hydrophobic amino acid composition.==
+* ==**Length:** Typically 12-35 residues.==
+* ==**Loop Length:** Short loops between TM helices (less than 60 residues).==
+* ==**Positive-Inside Rule:**  A tendency for positively charged residues (arginine and lysine) to be located on the cytoplasmic side of the membrane.==
 
 The slide mentions that these properties are utilized in Hidden Markov Models (HMMs), a powerful statistical tool for sequence analysis, and introduces TMHMM, a widely used TM helix prediction server with 78% accuracy.
 
@@ -46,7 +46,9 @@ The slide mentions that these properties are utilized in Hidden Markov Models (H
 
 This slide details how transmembrane domains (TMDs) can interact. It shows four possibilities based on parallel/antiparallel orientations and left/right-handed helix packing. It highlights “knobs-into-holes” packing and the importance of small residues fitting into the grooves of other helices in right-handed bundles. It also indicates the characteristic amino acid patterns (heptad repeats) and the periodicity within the transmembrane region.
 
-(j,i + 7) for l-handed, i, i+4 for r-handed
+==(j,i + 7) for l-handed, i, i+4 for r-handed==
+
+
 ![Screenshot 2025-01-08 at 08.31.36.png](/img/user/Attachments/Screenshot%202025-01-08%20at%2008.31.36.png)
 
 
@@ -54,7 +56,7 @@ This slide details how transmembrane domains (TMDs) can interact. It shows four 
 exists
 
 **Slide 11: Ligand-Activated Ion Channel Gating**
-
+==copy==
 ![Screenshot 2025-01-08 at 08.36.56.png](/img/user/Attachments/Screenshot%202025-01-08%20at%2008.36.56.png)
 **Slide 12: Structural Elements of the K+ Channel Pore**
 
@@ -90,7 +92,7 @@ These properties are crucial for predicting membrane protein structure as hydrop
 
 **Slide 21: Hydrophobicity and Hydrophilicity (Kyte-Doolittle)**
 
-This slide specifically presents the Kyte-Doolittle hydropathy scale, showing the values assigned to each amino acid. Positive values indicate hydrophobicity, while negative values indicate hydrophilicity.
+This slide specifically presents the Kyte-Doolittle hydropathy scale, showing the values assigned to each amino acid. ==Positive values indicate hydrophobicity, while negative values indicate hydrophilicity.==
 ![Screenshot 2025-01-08 at 08.42.38.png](/img/user/Attachments/Screenshot%202025-01-08%20at%2008.42.38.png)
 
 
@@ -110,7 +112,7 @@ example of hydropathy calculation using a sliding window of size 7 and the Kyte-
 
 **Slide 31:  Positive Inside Rule Visualization**
 
-This slide visualizes the positive-inside rule. It shows the log ratio of hydrophilic to hydrophobic residues flanking the transmembrane region. Positive values outside and negative values inside the membrane show the greater positive charge inside.
+This slide visualizes the positive-inside rule. It shows the log ratio of hydrophilic to hydrophobic residues flanking the transmembrane region. ==Positive values outside and negative values inside the membrane show the greater positive charge inside.==
 
 ![Screenshot 2025-01-08 at 08.45.10.png](/img/user/Attachments/Screenshot%202025-01-08%20at%2008.45.10.png)
 
@@ -130,7 +132,7 @@ This slide expands on the neural network approach, showing a two-level system. T
 ![Screenshot 2025-01-08 at 08.58.39.png](/img/user/Attachments/Screenshot%202025-01-08%20at%2008.58.39.png)
 **Slide 38: Training Data**
 
-This slide lists the types of data used to train the neural network: known 3D structures, antibody binding data, and proteolysis data. 
+This slide lists the types of data used to train the neural network: ==known 3D structures, antibody binding data, and proteolysis data.== 
 
 **Slide 39: A Collection of Well-Characterized Integral Membrane Proteins**
 
@@ -138,7 +140,7 @@ This slide exemplifies the type of curated data used for training and benchmarki
 
 **Slide 40-41: TMHMM Introduction and Features**
 
-These slides introduce TMHMM, a widely used hidden Markov model-based method for predicting transmembrane helices. The key features are: it's based on HMMs, **uses topology constraints, distinguishes well between soluble and membrane proteins, and has an accuracy of about 77%**. The limitation of having issues with signal peptides is also noted.
+These slides introduce TMHMM, a widely used hidden Markov model-based method for predicting transmembrane helices. The key features are: it's based on HMMs, ==**uses topology constraints, distinguishes well between soluble and membrane proteins, and has an accuracy of about 77%**. The limitation of having issues with signal peptides is also noted. ==
 
 **Slide 42: HMM in General**
 
@@ -152,7 +154,7 @@ This slide shows the relationship between alignment matrices and weight matrices
 
 These slides build up the concept of HMMs and how they’re applied to sequence analysis, specifically focusing on log-odds scores. Slide 44 shows a regular expression which finds sequences with a particular pattern. Slide 45 introduces a simple hidden Markov model, showing the states, emission probabilities, and transition probabilities. Slide 46 demonstrates how HMMs can differentiate between likely and unlikely sequences by calculating probabilities and log-odds scores.  The example is based on a simple motif alignment, showing how a consensus sequence and exceptional/non-consensus sequences are scored.
 
-**Slide 47: Log-Odds Score**
+**Slide 47: ==Log-Odds Score**==
 
 ![Screenshot 2025-01-08 at 09.07.37.png](/img/user/Attachments/Screenshot%202025-01-08%20at%2009.07.37.png)
 
@@ -170,16 +172,16 @@ This slide lists the advantages of using HMMs for transmembrane helix prediction
 
 **Slide 51: Globular Portions**
 
-This slide discusses how globular portions of membrane proteins are handled in TMHMM. Since these portions don’t have the strong sequence biases seen in TM helices, they are modeled using a simpler approach with a single "globular" state.
+This slide discusses how globular portions of membrane proteins are handled in TMHMM. Since these portions don’t have the strong sequence biases seen in TM helices, they are modeled using a simpler approach ==with a single "globular" state.==
 
 **Slide 52-55: TMHMM Architecture and States**
 
 These slides explain the architecture of the TMHMM in detail.  They explain the different states of the HMM, which correspond to different regions of a membrane protein (helix core, helix caps, cytoplasmic loops, non-cytoplasmic loops, and globular regions). Slide 54 explains how the helix is modeled and Slide 55 explains how the loops and caps are modeled.
-
+![Screenshot 2025-02-11 at 02.41.31.png](/img/user/Attachments/Screenshot%202025-02-11%20at%2002.41.31.png) ==copy==
 
 **Slide 56-57: Training Set and Cross-Validation**
 
-These slides explain how the TMHMM is trained and evaluated. It mentions a dataset of 160 proteins with experimentally determined TM helices, the use of 10-fold cross-validation, and the importance of ensuring no sequence similarity between the cross-validation subsets.  Jack-knife resampling is also mentioned.
+These slides explain how the TMHMM is trained and evaluated. It mentions a dataset of ==160 proteins with experimentally determined TM helices, the use of 10-fold cross-validation==, and the importance of ensuring no sequence similarity between the cross-validation subsets.  Jack-knife resampling is also mentioned.
 
 **Slide 58: TMHMM Prediction**
 
@@ -202,8 +204,8 @@ This slide illustrates how transmembrane alpha-helices can pack together within 
 
 **Slide 68-69: Amphiphilicity/Amphipathicity**
 
-These slides introduce the concept of amphiphilicity (or amphipathicity), where a protein domain has both hydrophilic and hydrophobic regions. This property is crucial for membrane-associated proteins.
-
+These slides introduce the concept of ==amphiphilicity (or amphipathicity), where a protein domain has both hydrophilic and hydrophobic regions==.Helical Wheels are useful== This property is crucial for membrane-associated proteins.
+![Screenshot 2025-02-11 at 02.44.19.png](/img/user/Attachments/Screenshot%202025-02-11%20at%2002.44.19.png)
 **Slide 70: Helical Wheel for Prion Protein**
 
 This slide shows a helical wheel plot for a segment of the prion protein. Helical wheel plots are a way to visualize the distribution of hydrophobic and hydrophilic residues within an alpha-helix.
@@ -228,11 +230,13 @@ These slides focus on the architecture of beta-barrel membrane proteins, using O
 
 This slide summarizes the key structural rules governing beta-barrel formation, including the number of strands, tilt angle, strand connections (turns and loops), and the distribution of amino acid sidechains.
 
-
+- ==The structure maintains an even number of β strands, with both N and C termini positioned at the periplasmic barrel end, ensuring structural symmetry==
+- ==The β-strands are arranged at a consistent 45-degree tilt, following the standard β-sheet twist pattern, with only one energetically favorable tilt direction being possible==
+- ==The β strands exhibit antiparallel organization and maintain close local connections with adjacent strands, maximizing the structural stability through neighborhood correlation==
 
 **Slide 79: Abundance of Amino Acids in Beta-Barrels**
 
-This slide compares the amino acid composition of beta-barrels to the overall genomic abundance, showing that the external surfaces are enriched in aromatic residues while the internal residues are enriched in small and polar amino acids.
+This slide compares the amino acid composition of beta-barrels to the overall genomic abundance, showing that the ==external surfaces are enriched in aromatic residues while the internal residues are enriched in small and polar amino acids==.
 
 
 **Slide 81: Beta-Barrel Finder**
@@ -249,7 +253,7 @@ This slide shows a flow chart depicting a suite of predictors that incorporates 
 
 **Slide 84-86: Re-entrant Regions**
 
-These slides address the challenge of predicting re-entrant regions in membrane proteins, which are segments that dip into the membrane but don't completely cross it. Slide 84 shows the structure of the glycerol channel GlpF and highlights the 'half TM helices'. Slide 85 shows several examples of these segments with different structural motifs and Slide 86 shows examples of interface helix and loop regions where these segments are found.
+These slides address the challenge of predicting r==e-entrant regions in membrane proteins, which are segments that dip into the membrane but don't completely cross it==. Slide 84 shows the structure of the glycerol channel GlpF and highlights the 'half TM helices'. Slide 85 shows several examples of these segments with different structural motifs and Slide 86 shows examples of interface helix and loop regions where these segments are found.
 ![Screenshot 2025-01-08 at 09.29.23.png](/img/user/Attachments/Screenshot%202025-01-08%20at%2009.29.23.png)
 **Slide 87: TOP-MOD**
 

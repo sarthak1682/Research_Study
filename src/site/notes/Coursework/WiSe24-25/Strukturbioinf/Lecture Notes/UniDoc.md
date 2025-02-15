@@ -6,10 +6,10 @@
 ![Screenshot 2025-01-07 at 07.41.27.png](/img/user/Attachments/Screenshot%202025-01-07%20at%2007.41.27.png)
 
 Goal: maximizing intra-domain interaction while minimizing inter-domain interaction
-
 Constraints:
 a) size of a fragment > 30
 b) cutting position not in secondary structure
+
 
 ![Screenshot 2025-01-07 at 07.42.41.png](/img/user/Attachments/Screenshot%202025-01-07%20at%2007.42.41.png)
 

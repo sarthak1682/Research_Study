@@ -3,6 +3,7 @@
 ---
 
 ---
+[[L12_SbioInf_MM.canvas|L12_SbioInf_MM]]
 
 
 **Slide 2: What is docking?**
@@ -78,7 +79,6 @@ Unbound docking is more realistic and challenging, as it uses the structures of 
 
 **Slide 11: Difficulties**
 
-This slide summarizes the challenges of docking:
 
 * **Rigidity:**  Biological molecules are often flexible, making it difficult to predict their bound conformations.
 * **Search Space:** The vast number of possible orientations and conformations creates a huge search space.
@@ -87,7 +87,6 @@ This slide summarizes the challenges of docking:
 
 **Slide 13: The stages of protein-protein docking**
 
-This slide outlines a typical workflow for protein-protein docking:
 
 1. **Input Coordinates:** Start with the 3D structures of the two proteins.
 2. **Rigid-Body Search:**  Explore different orientations of the proteins relative to each other, treating them as rigid bodies.

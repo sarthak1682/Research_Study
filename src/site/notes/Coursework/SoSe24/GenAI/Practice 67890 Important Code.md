@@ -974,6 +974,15 @@ return out
 
 
 #### ViT
+![Attachments/dl4nlp-slides-complete 36.jpg](/img/user/Attachments/dl4nlp-slides-complete%2036.jpg)
+
+[[dl4nlp-slides-complete.pdf#page=162&rect=18,32,323,244|dl4nlp-slides-complete, p.162]]
+Short Explanation: 
+- Image Splitting: The input image is split into fixed-size patches (like splitting a photo into a grid)
+- Patch Embedding: Each patch is flattened and linearly projected into a lower-dimensional space. The image also shows that position embeddings are added to maintain spatial information
+- Transformer Encoder: These embedded patches are then processed by a standard Transformer encoder (the gray block), which uses self-attention to learn relationships between all patches
+- MLP Head: Finally, a Multi-Layer Perceptron (MLP) head processes the encoder's output to make the final classification (Bird, Car, etc.)
+
 ```
 
 class ResidualModule(nn.Module):

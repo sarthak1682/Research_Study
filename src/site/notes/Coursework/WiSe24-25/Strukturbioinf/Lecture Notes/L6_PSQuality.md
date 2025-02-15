@@ -3,6 +3,9 @@
 ---
 
 ---
+
+[[L6_SbioInf_MM.canvas]]
+
 **Why Quality Assurance?**
 
 Every "structure" we see is a *model* derived from experimental data, and every experiment has inherent errors.  These can be:
@@ -73,8 +76,3 @@ Structure refinement is an iterative process of improving the model to better fi
 * **Bad Contacts:** Steric clashes between atoms that are too close together.
 * **Unsatisfied Hydrogen Bonds:** Hydrogen bond donors without acceptors.
 
-**Online Resources and Software**
-
-Several programs are available for evaluating structure quality, including those listed in Tables 14.1 and 14.2. These resources provide comprehensive validation reports that flag potential problems in the structure.
-
-By understanding these concepts and using the available tools, we can critically assess the quality of macromolecular structures and ensure the reliability of our scientific conclusions based on them.

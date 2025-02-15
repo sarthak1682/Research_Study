@@ -4,8 +4,6 @@
 
 ---
 
-
-
 Can you embed a sentence, mapping a cluster of thought possible? 
 
 One-hot vs Dense Embeddings? 
@@ -13,11 +11,15 @@ One-hot vs Dense Embeddings?
 		- High D
 		- Not possible to measure similarity
 
+![Attachments/dl4nlp-slides-complete 32.jpg](/img/user/Attachments/dl4nlp-slides-complete%2032.jpg)
 
+[[dl4nlp-slides-complete.pdf#page=20&rect=78,64,297,246|dl4nlp-slides-complete, p.20]]
 
 Induction vs Transduction:
 
-Induction:- This is the process of making generalizations from specific observations. For example, if you observe several instances of a phenomenon, you might infer a general rule. In machine learning, this involves creating a model based on a set of training data and using it to make predictions about unseen data.
+Induction:- This is the process of making generalizations from specific observations. For example, if you observe sev> [!PDF|] [[dl4nlp-slides-complete.pdf#page=36&selection=44,25,44,27|dl4nlp-slides-complete, p.36]]
+> DT
+eral instances of a phenomenon, you might infer a general rule. In machine learning, this involves creating a model based on a set of training data and using it to make predictions about unseen data.
     
     Example: After seeing many apples falling from trees, you might generalize that "all apples fall down due to gravity."
     
@@ -57,7 +59,7 @@ Semantics
 
 
 
-Neural Prob LM
+### Neural Prob LM
 
 Next token Prediction: 
 ![Attachments/dl4nlp-slides-complete 1.jpg](/img/user/Attachments/dl4nlp-slides-complete%201.jpg)
@@ -65,8 +67,15 @@ Next token Prediction:
 [[dl4nlp-slides-complete.pdf#page=53&rect=26,62,352,220&color=important|dl4nlp-slides-complete, p.53]]
 
 
+Problems with Markov: 
 
-Idea Using a neural network induces non-linearity and overcomes the shortcomings of traditional models (e.g Markov Models)
+Curse of Dim, Sparsity (
+> [!PDF|] [[dl4nlp-slides-complete.pdf#page=55&selection=40,7,63,5|dl4nlp-slides-complete, p.55]]
+> considering |V | = 1.000.000 & bi-grams as context Unlikely to observe all of them bi-gram combinations (a) ever (b) often
+)
+
+
+Using a neural network induces non-linearity and overcomes the shortcomings of traditional models (e.g Markov Models)
 (a)  Linear increase in  # parameters with increasing context size
 (b)  Better generalization
 Input:  Context of  (n  −  1)  words  [w(t−n+1):(t−1)] 
@@ -80,18 +89,18 @@ Output: Probability distribution over the next word  P(wt  |w(t−n+1):(t−1))
 
 Problems? 
 Vanilla Softmax: Expensive, 
-Solution:
+Solution: Hierarchical Softmax/Sampling
 Down below
 
 
 > [!PDF|187, 97, 229] [[dl4nlp-slides-complete.pdf#page=58&annotation=8291R|dl4nlp-slides-complete, p.58]]
 > Still relying on the markov assumption
 
-Wat? #TODO 
+Wat? Not really but the context window still has to be specified manually. 
 
+### Word Embeddings
 
-Word Embeddings
-
+words that similar roles wrt task get similar embeddings
 ![Attachments/dl4nlp-slides-complete 2.jpg](/img/user/Attachments/dl4nlp-slides-complete%202.jpg)
 
 [[dl4nlp-slides-complete.pdf#page=63&rect=17,135,244,168&color=important|dl4nlp-slides-complete, p.63]]
@@ -102,6 +111,7 @@ Word2Vec Model Architecture:
 ![Attachments/dl4nlp-slides-complete 3.jpg](/img/user/Attachments/dl4nlp-slides-complete%203.jpg)
 
 [[dl4nlp-slides-complete.pdf#page=65&rect=18,108,341,226|dl4nlp-slides-complete, p.65]]
+f can be softmax
 
 Problems with Softmax? 
 	Needs to compute dot products with the whole vocabulary in the denominator for every single prediction
@@ -120,4 +130,3 @@ Problems with Softmax?
 > [!PDF|255, 208, 0] [[dl4nlp-slides-complete.pdf#page=23&annotation=8321R|dl4nlp-slides-complete, p.23]]
 > ine-tune them
 
-dsaDJAsd

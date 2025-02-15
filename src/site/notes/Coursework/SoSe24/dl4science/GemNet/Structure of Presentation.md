@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/coursework/so-se24/dl4science/gem-net/structure-of-presentation/","noteIcon":""}
 ---
 
----
+ ---
 # Intro
 What it is trying to achieve/ what did it accomplish (brief overview of the problem it tries to solve, the results) 
 	

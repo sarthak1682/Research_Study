@@ -29,7 +29,6 @@ Taxonomy
 | **Assumptions**        | Often make strong assumptions about data distribution              | Fewer assumptions, more focused on discriminative power         |
 
 ##### Bayes' Rule
-
 $$ P(Y|X) = \frac{P(X|Y) \cdot P(Y)}{P(X)} $$
 
 where:

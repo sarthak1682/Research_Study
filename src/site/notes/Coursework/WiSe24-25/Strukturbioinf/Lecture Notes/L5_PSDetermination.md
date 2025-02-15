@@ -3,6 +3,9 @@
 ---
 
 ---
+[[L5_MM_SbioInf.canvas]]
+
+
 three main experimental techniques used to achieve this: X-ray crystallography, Nuclear Magnetic Resonance (NMR) spectroscopy, and Cryo-electron microscopy (Cryo-EM).
 
 **1. X-ray Crystallography**

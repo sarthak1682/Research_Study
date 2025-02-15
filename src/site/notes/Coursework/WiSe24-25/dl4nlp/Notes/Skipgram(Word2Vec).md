@@ -3,6 +3,11 @@
 ---
 
 ---
+
+> [!PDF|] [[dl4nlp-slides-complete.pdf#page=75&selection=2,6,3,24|dl4nlp-slides-complete, p.75]]
+> Learn many bigram language models at the same time.
+
+
 1. Core Concept: Skip-gram is a technique to learn word embeddings (vector representations of words) by predicting surrounding context words given a target word.
 2. Training Objective:
 

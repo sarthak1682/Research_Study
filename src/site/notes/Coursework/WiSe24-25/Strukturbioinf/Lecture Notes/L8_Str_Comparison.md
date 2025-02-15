@@ -3,7 +3,8 @@
 ---
 
 ---
-This lecture covers protein structure comparison and 3D alignment.
+[[L8_SbioInf_MM.canvas|L8_SbioInf_MM]]
+
 
 **Why compare protein structures?**
 
@@ -12,6 +13,7 @@ Unlike protein sequences, which can diverge significantly over evolutionary time
 Structure comparison also allows us to:
 
 * **Analyze conformational changes upon ligand binding:**  Ligand binding can induce structural changes that facilitate catalysis, promote substrate binding at other sites, or allosterically regulate protein activity. Comparing bound and unbound structures helps us understand these mechanisms, crucial for drug design.
+	* 1. **Allosteric Regulation** – This occurs when a ligand binds to a site other than the active site (an allosteric site), leading to changes in protein activity. This can enhance (activation) or reduce (inhibition) the protein's function.
 * **Analyze structural variation in protein families:** This tells us how much structures diverge as their sequences change, which depends on the protein fold and its inherent flexibility (structural plasticity). Multiple structure comparisons can pinpoint structurally conserved regions, like active sites or protein-protein interaction interfaces.
 * **Identify common structural motifs:** Even proteins without evolutionary relationships (analogs) can exhibit global structural similarities due to constraints on secondary structure packing and physico-chemical requirements for protein folding. Analyzing these similarities helps us understand protein folding principles and common structural motifs, also known as super-secondary structures.
 
@@ -74,7 +76,13 @@ However, in structure alignment, applying a rigid-body transformation (translati
 
 **2. Iterative Methods (e.g., alternating superposition and alignment):**
 
-These methods try to iteratively refine both the alignment and the superposition.  A common approach involves:
+These methods try to iteratively refine both the alignment and the superposition.  
+- **Alignment** refers to determining which residues in one structure correspond to residues in another. This is done using a scoring matrix, which reflects how well residues match based on their spatial proximity after superposition.
+    
+- **Superposition** refers to applying a rigid-body transformation (rotation and translation) to one structure to minimize the RMSD (root mean square deviation) between aligned residues.
+- Alignment dictates **which** residues should be compared.
+- Superposition determines **how** the structures should be positioned to minimize differences.
+A common approach involves:
 
 1. **Initial alignment:**  Start with an initial guess for the alignment, perhaps based on sequence similarity, secondary structure matching, or manual selection of a few corresponding residues.
 
@@ -88,8 +96,9 @@ These methods try to iteratively refine both the alignment and the superposition
 
 While iterative methods don't guarantee a globally optimal solution, they often find good alignments in practice.
 
-[[Coursework/WiSe24-25/Strukturbioinf/Lecture Notes/DDP\|DDP]]]
 
+
+[[Coursework/WiSe24-25/Strukturbioinf/Lecture Notes/DDP\|DDP]]
 
 **4. Distance Matrix Methods (e.g., DALI):**
 
@@ -105,7 +114,7 @@ These methods represent protein structures as matrices of inter-residue distance
 
 Distance matrix methods are particularly effective at detecting similarities between proteins with different topologies or circular permutations, where the order of secondary structure elements differs.![Screenshot 2025-01-07 at 08.37.13.png](/img/user/Attachments/Screenshot%202025-01-07%20at%2008.37.13.png)
 
-**5. TM-align (combining rotation matrix and DP):**
+**5. TM-align (combining rotation matrix and DP):** (Template Modelling)
 
 TM-align addresses the computational cost of DALI by using a clever combination of dynamic programming and rotation matrices.
 
@@ -129,6 +138,4 @@ Foldseek takes a different approach based on representing protein structures as 
 
 Foldseek sacrifices some detail compared to methods that work directly with 3D coordinates, but its speed makes it ideal for large-scale structure searches.  It is orders of magnitude faster than DALI.
 
-
-These are just some of the most prominent algorithms for protein structure comparison.  The field continues to advance, with new methods being developed to improve both speed and accuracy. The choice of algorithm depends on the specific application and the trade-off between computational cost and the level of detail required.
 

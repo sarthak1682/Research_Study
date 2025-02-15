@@ -22,7 +22,7 @@ NP
 	efficiently verified =
 	solved non-deterministically in polynomial time
 
-NP-Complete
+NP-Complete (NP + NP-Hard)
 	1. Problem is in NP
 	2. Every other problem in NP can be reduced to this problem in polynomial time
 

@@ -3,7 +3,7 @@
 ---
 
 ---
-
+[[L2_SbioInf_MM.canvas|L2_SbioInf_MM]]
 
 **Protein Structure and Function are Linked**
  The process of a linear amino acid chain folding into a complex 3D structure is known as protein folding. This folding process is dictated by the physicochemical properties of the amino acids and their interactions with each other and the surrounding environment.

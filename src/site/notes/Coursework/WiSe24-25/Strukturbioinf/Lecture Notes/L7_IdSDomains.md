@@ -11,6 +11,7 @@
 * **Genetics and Biochemistry:** A domain is the minimal fragment of a gene, typically identified through deletion experiments, that retains its function.
 * **Modules:** Domains commonly found in many different proteins.
 
+![Screenshot 2025-02-07 at 23.13.10.png](/img/user/Attachments/Screenshot%202025-02-07%20at%2023.13.10.png)
 
 **Challenges in Domain Identification**
 

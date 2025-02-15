@@ -4,6 +4,10 @@
 
 ---
 
+[[L4_MM_SbioInf.canvas|L4_MM_SbioInf]]
+
+
+
 **The Problem:**
 
 We can determine the 3D structure of proteins experimentally, often using X-ray crystallography. (Task: label the secondary structure state for each residue based on atomic coordinates)  The output is a list of atomic coordinates, typically stored in a PDB (Protein Data Bank) file.  While alpha-helices and beta-strands are visually identifiable in a 3D structure, we need an objective and consistent way to define and assign them.  Different definitions exist, each capturing various aspects of the protein's reality.
@@ -28,7 +32,9 @@ Ideal assignment schemes should agree between proteins of similar structure and 
 
 **Intra-molecular Hydrogen Bonds in a Protein:**
 
-Hydrogen bonds are crucial for stabilizing secondary structure.  They form between the backbone amide hydrogen and carbonyl oxygen atoms.
+Hydrogen bonds are crucial for stabilizing secondary structure.  They form between the backbone amide hydrogen and carbonyl oxygen atoms. 
+
+Peptide Bonds: the carboxyl group (-COOH) of one amino acid reacts with the amino group (-NH2) of another amino acid
 ![Screenshot 2025-01-07 at 05.04.14.png](/img/user/Attachments/Screenshot%202025-01-07%20at%2005.04.14.png)
 **Alpha-helix (α-helix):**
 
@@ -74,7 +80,8 @@ Various models exist to computationally identify hydrogen bonds, including angle
     * **Ladders/Sheets:** Bulge-linked ladders where two ladders are connected by a single residue on one strand and less than 5 residues on the other. 
 
 3. **Geometric Structure:** Provides further structural details.
-    * **Bends ("S"):** Regions with high curvature (at least 70°).
+    * **Bends ("S"):** Regions with high curvature (at least 70°).> [!PDF|] [[SBioInf_23456.pdf#page=122&selection=12,0,19,16|SBioInf_23456, p.122]]
+>  curvature for residue i is quantified, as the angle between backbone direction of (i-2,i-1,i)&(i,i+1,i+2)
     * **Chirality:** The handedness of the helix (most are right-handed, or positive).
     * **Disulfide Bonds** and **Chain breaks:** Provide additional information about protein connectivity.
 

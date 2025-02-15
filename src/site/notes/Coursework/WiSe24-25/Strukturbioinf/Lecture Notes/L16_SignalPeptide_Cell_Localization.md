@@ -3,17 +3,17 @@
 ---
 
 ---
+[[L16_SbioInf_MM.canvas|L16_SbioInf_MM]]
 
-
-Cellular localization refers to where a protein resides within a cell (e.g., cytoplasm, nucleus, mitochondria). Signal peptides are short amino acid sequences within a protein that act as "zip codes," directing the protein to its correct location.  Predicting these signals is crucial for understanding protein function.
+Cellular localization refers to where a protein resides within a cell (e.g., cytoplasm, nucleus, mitochondria). ==Signal peptides are short amino acid sequences within a protein that act as "zip codes," directing the protein to its correct location==.  Predicting these signals is crucial for understanding protein function.
 
 **Slide 2: Peptide Signals: Transport and Localization**
 
 * **Key Concept:** Proteins have intrinsic signals that govern their transport and localization within the cell. 
-* **Examples:** The slide lists several types of N-terminal signal peptides (located at the beginning of the protein sequence):
-    * **SPs (Secretory Signal Peptides):**  Direct proteins to the secretory pathway, ultimately leading to secretion outside the cell or insertion into the cell membrane.
-    * **cTPs (Chloroplast Transit Peptides):** Target proteins to chloroplasts.
-    * **mTPs (Mitochondrial Targeting Peptides):** Target proteins to mitochondria.
+* **Examples:** The slide lists several types of ==N-terminal signal peptides (located at the beginning of the protein sequence)==:
+    * ==**SPs (Secretory Signal Peptides):**  Direct proteins to the secretory pathway, ultimately leading to secretion outside the cell or insertion into the cell membrane.==
+    * ==**cTPs (Chloroplast Transit Peptides):** Target proteins to chloroplasts.==
+    * ==**mTPs (Mitochondrial Targeting Peptides):** Target proteins to mitochondria.==
 * **NLS (Nuclear Localization Signals):** These signals, not always at the N-terminus, direct proteins to the nucleus.
 
 **Slide 3: N-terminal Secretory Signal Peptides (SPs)**
@@ -32,8 +32,8 @@ This slide illustrates the mechanism of protein secretion via the endoplasmic re
 
 This slide compares signal peptides (SPs) and signal anchors:
 
-* **Signal Peptide:**  Cleaved after translocation, releasing the mature protein into the ER lumen (or extracellular space).
-* **Signal Anchor:** Not cleaved.  It becomes a transmembrane domain, anchoring the protein within the membrane. The protein remains embedded in the membrane.
+* ==**Signal Peptide:**  Cleaved after translocation, releasing the mature protein into the ER lumen (or extracellular space).==
+* ==**Signal Anchor:** Not cleaved.  It becomes a transmembrane domain, anchoring the protein within the membrane. The protein remains embedded in the membrane.==
 
 **Slide 5: Signal Peptides and Signal Anchors (Properties)**
 
@@ -46,10 +46,10 @@ This slide compares signal peptides (SPs) and signal anchors:
 
 This slide describes the characteristic regions within a typical secretory signal peptide:
 
-* **n-region:**  A short, positively charged region near the N-terminus.
-* **h-region:** A central hydrophobic region.
-* **c-region:**  A more polar, uncharged region near the cleavage site.
-* **Cleavage site:** The site where signal peptidase cleaves the signal peptide from the mature protein. Specific amino acid patterns are found near this site, often small and neutral at positions -3 and -1.
+* ==**n-region:**  A short, positively charged region near the N-terminus.==
+* ==**h-region:** A central hydrophobic region.==
+* ==**c-region:**  A more polar, uncharged region near the cleavage site.==
+* ==**Cleavage site==:** The site where signal peptidase cleaves the signal peptide from the mature protein. Specific amino acid patterns are found near this site, often small and neutral at positions -3 and -1.
 * **Variations:**  The exact characteristics of signal peptides can vary between eukaryotes, gram-positive bacteria, and gram-negative bacteria.
 
 **Slide 7: N-terminal Secretory Signal Peptides (SPs) (Comparison)**
@@ -71,7 +71,7 @@ This table summarizes the differences in SPs between the three domains of life:
 
 **Slide 11: SignalP Output**
 
-Explanation of the different scores produced by the SignalP software:
+Explanation of the ==different score==s produced by the SignalP software:
 
 * **C-score:** Raw cleavage site score; peaks at the position immediately after the predicted cleavage site.
 * **S-score:** Signal peptide score; high for positions within the signal peptide and low after the cleavage site.
@@ -80,6 +80,7 @@ Explanation of the different scores produced by the SignalP software:
 **Slide 12: How to Predict Signal Peptides (SPs)?**
 
 Example of SignalP output for a secretory protein (EGFR). The scores are plotted along the protein sequence. The output also includes the predicted cleavage site location.
+
 
 
 

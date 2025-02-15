@@ -14,8 +14,8 @@ Suppose we have a candidate translation and two reference translations:
 
 Candidate: "The quick brown fox jumps over the lazy dog." Reference 1: "The fast brown fox leaps across the sluggish canine." Reference 2: "The speedy orange vulpine bounds over the indolent hound."
 
-For the 1-gram precision, the candidate has 9 words, and 7 of them match the references, so the 1-gram precision would be 7/9 = 0.778.
+For the 1-gram precision, the candidate has 9 words, and 7 of them match the references, so the 1-gram precision would be 5/9
 
-For the 2-gram precision, the candidate has 8 2-grams, and 5 of them match the references, so the 2-gram precision would be 5/8 = 0.625.
+For the 2-gram precision, the candidate has 8 2-grams, and 5 of them match the references, so the 2-gram precision would be 2/8 = 0.25.
 
 The BLEU score would then be calculated using these precision values, the brevity penalty, and the weights for each n-gram.
