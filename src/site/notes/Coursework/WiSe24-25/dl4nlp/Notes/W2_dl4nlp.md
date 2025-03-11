@@ -44,11 +44,17 @@ The graphical representation shows the structure of the two-layer BiLSTM:
 
 Overall, ELMo embeddings capture rich, context-sensitive information for each token, combining character-based and multi-layered context-dependent information.
 
+---
+
 Bi-Dir. RNNs
 ![Attachments/dl4nlp-slides-complete 33.jpg](/img/user/Attachments/dl4nlp-slides-complete%2033.jpg)
 
 [[dl4nlp-slides-complete.pdf#page=111&rect=26,95,344,160|dl4nlp-slides-complete, p.111]]
 
+
+![Attachments/dl4nlp-slides-complete 42.jpg](/img/user/Attachments/dl4nlp-slides-complete%2042.jpg)
+
+[[dl4nlp-slides-complete.pdf#page=276&rect=25,188,293,228|dl4nlp-slides-complete, p.276]]
 ## Tokenization
 
 A **morpheme** is the smallest unit of meaning in a language.

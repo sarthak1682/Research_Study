@@ -12,7 +12,7 @@
 
 [[Coursework/WiSe24-25/dl4nlp/Notes/W5_BertBased\|W5_BertBased]]
 
-[[Coursework/WiSe24-25/dl4nlp/Notes/W6_PostBert\|W6_PostBert]]
+[[Coursework/WiSe24-25/dl4nlp/Notes/W6_PostBert_Arch\|W6_PostBert_Arch]]
 
 [[Coursework/WiSe24-25/dl4nlp/Notes/W7_GPT\|W7_GPT]]
 

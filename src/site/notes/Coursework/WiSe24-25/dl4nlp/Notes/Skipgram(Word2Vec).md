@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/coursework/wi-se24-25/dl4nlp/notes/skipgram-word2-vec/","noteIcon":""}
 ---
 
----
+ ---
 
 > [!PDF|] [[dl4nlp-slides-complete.pdf#page=75&selection=2,6,3,24|dl4nlp-slides-complete, p.75]]
 > Learn many bigram language models at the same time.
@@ -42,3 +42,4 @@
 - Can learn multiple language models simultaneously
 - Efficient for learning high-quality word vectors
 - Captures semantic relationships between words
+

@@ -127,6 +127,6 @@ Problems with Softmax?
 
 [[Coursework/WiSe24-25/dl4nlp/Notes/FastText\|FastText]]
 
-> [!PDF|255, 208, 0] [[dl4nlp-slides-complete.pdf#page=23&annotation=8321R|dl4nlp-slides-complete, p.23]]
-> ine-tune them
+
+$$\mathcal{L} = \sum_{t=1}^{T} \sum_{-c \leq j \leq c, j \neq 0} \left[ \log \sigma(v_{w_t}^T \cdot v_{w_{t+j}}) + \sum_{k=1}^{T} \mathbb{E}_{w_k \sim P_n(w)} \left[ \log \sigma(-v_{w_t}^T \cdot v_{w_k}) \right] \right]$$
 

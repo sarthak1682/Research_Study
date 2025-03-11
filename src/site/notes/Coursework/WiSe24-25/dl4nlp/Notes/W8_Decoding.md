@@ -13,7 +13,16 @@ EOS, max_l, max_t
 
 Decoding Strategies
 > [!PDF|255, 208, 0] [[Decoding_W8.pdf#page=8&annotation=435R|Decoding_W8, p.8]]
-> Deterministic Greedy search Beam search Contrastive search Su et al., 2022 Contrastive decoding Li et al., 2023 Stochastic Sampling (with temperature) Top-k sampling Fan et al., 2018 Nucleus top-p sampling Holtzman et al., 2019 Typical sampling 
+> Deterministic: 
+>  Greedy search 
+> Beam search
+>  Contrastive search Su et al., 2022
+>   Contrastive decoding Li et al., 2023
+>    Stochastic : 
+>    Sampling (with temperature) 
+>    Top-k sampling Fan et al., 2018
+>     ucleus top-p sampling Holtzman et al., 2019 
+>     Typical sampling 
 
 
 ### Greedy Search
@@ -22,6 +31,7 @@ Decoding Strategies
 > Core idea: Greedy search selects the word with the highest probability at each timestep, iteratively building the output sequence Exploration of search space: It explores a single path through the output space, favoring the most probable word at each step without considering future consequences Candidate Sequence: Only keeps track of the most likely sequence at each step, discarding other possibilities Decision Making: It makes local decisions based solely on the highest probability at the current step without considering potential longer-term outcome
 
 
+Drawbacks 
 ![Attachments/Decoding_W8.jpg](/img/user/Attachments/Decoding_W8.jpg)
 
 [[Decoding_W8.pdf#page=13&rect=15,79,355,246|Decoding_W8, p.13]]
@@ -37,15 +47,23 @@ Repetitiveness
 Overemphasis on Common Phrases
 
 
-### Beam Search> [!PDF|255, 208, 0] [[Decoding_W8.pdf#page=15&annotation=441R|Decoding_W8, p.15]]
-> labs Academy Core idea: Beam search extends the exploration to multiple possible sequences instead of just the most probable one Exploration of search space: It explores multiple paths (or "beams") simultaneously, maintaining a set of promising candidate sequences Candidate Sequence: Keeps a fixed number of most probable sequences (determined by the beam width parameter k) at each step Decision Making: At each step, it considers multiple candidate sequences and selects the most probable ones based on their cumulative probabilities up to that point
+### Beam Search
+
+> [!PDF|255, 208, 0] [[Decoding_W8.pdf#page=15&annotation=441R|Decoding_W8, p.15]]
+> Core idea: Beam search extends the exploration to multiple possible sequences instead of just the most probable one 
+> Exploration of search space: It explores multiple paths (or "beams") simultaneously, maintaining a set of promising candidate sequences 
+> Candidate Sequence: Keeps a fixed number of most probable sequences (determined by the beam width parameter k) at each step 
+> Decision Making: At each step, it considers multiple candidate sequences and selects the most probable ones based on their cumulative probabilities up to that point
 
 
-k just seems to be width
+> [!PDF|] [[Decoding_W8.pdf#page=17&selection=2,0,7,25|Decoding_W8, p.17]]
+> At each timestep beam search chooses the k tokens with the highest joint probability
+
 ![Attachments/Decoding_W8 1.jpg](/img/user/Attachments/Decoding_W8%201.jpg)
 
 [[Decoding_W8.pdf#page=16&rect=13,25,339,226|Decoding_W8, p.16]]
 
+Beam Search can "degenerate", become repetitive
 
 ### Stochastic Decoding
 
@@ -74,8 +92,16 @@ Top-P (Nucleus Sampling)
 > [!PDF|255, 208, 0] [[Decoding_W8.pdf#page=26&annotation=444R|Decoding_W8, p.26]]
 > Top-p sampling chooses from the smallest possible set of tokens whose cumulative probability exceeds the probability threshold p. 
 
+![Attachments/Decoding_W8 16.jpg](/img/user/Attachments/Decoding_W8%2016.jpg)
+
+[[Decoding_W8.pdf#page=26&rect=19,43,346,188|Decoding_W8, p.26]]
+
+
 
 #### Contrastive Search
+
+tries to find a balance between coherence and diversity
+
 > [!PDF|255, 208, 0] [[Decoding_W8.pdf#page=28&annotation=452R|Decoding_W8, p.28]]
 > When generating output, contrastive search jointly considers: The probability predicted by the language model to maintain the **semantic coherence** between the generated text and the prompt. The similarity with respect to the previous context to **avoid degeneration**
 
@@ -95,6 +121,8 @@ Gen of greedy search it seems
 
 #### BLEU (Bilingual Evaluation Understudy)
 
+[[Coursework/WiSe24-25/dl4nlp/Notes/BLEU\|BLEU]]
+
 ![Attachments/Decoding_W8 8.jpg](/img/user/Attachments/Decoding_W8%208.jpg)
 
 [[Decoding_W8.pdf#page=46&rect=99,43,309,79|Decoding_W8, p.46]]
@@ -107,6 +135,7 @@ Gen of greedy search it seems
 
 [[Decoding_W8.pdf#page=46&rect=103,141,261,198|Decoding_W8, p.46]]
 
+r = ref corpus l c = candidate corpus l
 
 #### ROUGE(Recall-Oriented Understudy for Gisting Evaluation)
 

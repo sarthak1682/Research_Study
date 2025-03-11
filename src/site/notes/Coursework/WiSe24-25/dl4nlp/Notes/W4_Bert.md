@@ -15,6 +15,9 @@ SSL Objectives:
 	PLM: Permutation Lang Modelling
 	Replaced token detection obj (needs two models)
 
+
+
+
 ![Attachments/dl4nlp-slides-complete 11.jpg](/img/user/Attachments/dl4nlp-slides-complete%2011.jpg)
 
 [[dl4nlp-slides-complete.pdf#page=252&rect=21,75,294,229|dl4nlp-slides-complete, p.252]]
@@ -89,25 +92,40 @@ advantages of BertScore and BLEURT, particularly their ability to capture contex
 
 ![Screenshot 2025-01-04 at 03.17.59.png](/img/user/Attachments/Screenshot%202025-01-04%20at%2003.17.59.png)
 
-![Attachments/dl4nlp-slides-complete 15.jpg](/img/user/Attachments/dl4nlp-slides-complete%2015.jpg)
-
-[[dl4nlp-slides-complete.pdf#page=283&rect=19,119,333,272|dl4nlp-slides-complete, p.283]]
 
 
 
 
-BERT
+
+
+BERT combines Self-Attention + Deep Bidir. (ELMo only has shallow Bidir)
 > [!PDF|255, 208, 0] [[dl4nlp-slides-complete.pdf#page=277&annotation=8333R|dl4nlp-slides-complete, p.277]]
 > Bidirectional Encoder Representations from Transformers
 
 
-SSL: MLM + Next-Sentence-Prediction
+SSL: MLM (necessary) + Next-Sentence-Prediction (complementary)
 Encoder: Backbone
 
-> [!PDF|255, 208, 0] [[dl4nlp-slides-complete.pdf#page=290&annotation=8336R|dl4nlp-slides-complete, p.290]]
-> Modified pre-training task: Predict 15% of the tokens of which only 80% have been replaced by [MASK] 80% of the selected tokens are actually [MASK] ed 10% of the selected tokens: The model has to “understand“ that the word needs to be replaced 10% of the selected tokens: The model has to “understand“ that the word needs to be kept
+
+![Attachments/dl4nlp-slides-complete 15.jpg](/img/user/Attachments/dl4nlp-slides-complete%2015.jpg)
+
+
+[[dl4nlp-slides-complete.pdf#page=283&rect=19,119,333,272|dl4nlp-slides-complete, p.283]]
+
+Learned Segment + Position Embeddings
 
 ---
+
+
+![Attachments/dl4nlp-slides-complete 44.jpg](/img/user/Attachments/dl4nlp-slides-complete%2044.jpg)
+
+[[dl4nlp-slides-complete.pdf#page=290&rect=21,68,346,180|dl4nlp-slides-complete, p.290]]
+
+
+MASK token does not occur during Fine-tuning but is a central part of the training procedure
+
+
+Next Sentence Prediction
 ![Attachments/dl4nlp-slides-complete 16.jpg](/img/user/Attachments/dl4nlp-slides-complete%2016.jpg)
 
 [[dl4nlp-slides-complete.pdf#page=292&rect=20,63,356,244|dl4nlp-slides-complete, p.292]]
@@ -125,6 +143,10 @@ pretraining: [[dl4nlp-slides-complete.pdf#page=295&rect=8,65,332,224|dl4nlp-slid
 
 ---
 Taxonomy of TL: 
+![Attachments/dl4nlp-slides-complete 46.jpg](/img/user/Attachments/dl4nlp-slides-complete%2046.jpg)
+
+[[dl4nlp-slides-complete.pdf#page=303&rect=45,50,318,240|dl4nlp-slides-complete, p.303]]
+
 
 Hospital A: model for detecting pneumonia
 Hospital B: smaller, unlabeled dataset of X-ray images (target domain), which uses different X-ray equipment and imaging protocols 
