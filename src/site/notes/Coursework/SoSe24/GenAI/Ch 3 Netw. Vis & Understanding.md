@@ -100,7 +100,7 @@ Transp_Conv?
 Upconv.?
 combines convolutional and upsampling layers to learn to upsample feature maps
 
-U-Net
+###### U-Net
 ![Screenshot 2024-07-13 at 16.40.24.png](/img/user/Attachments/Screenshot%202024-07-13%20at%2016.40.24.png)
 
 1.  Contracting Path (Encoder) : normal stuff
